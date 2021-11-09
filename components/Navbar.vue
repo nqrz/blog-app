@@ -22,7 +22,6 @@
         </span>
       </NuxtLink>
       <div>
-        <NuxtLink class="mr-4 hover:text-white" to="/blog">Articles</NuxtLink>
         <NuxtLink class="mr-4 hover:text-white" to="/projects"
           >Projects</NuxtLink
         >
