@@ -66,23 +66,15 @@
         <div class="flex justify-center px-1 flex-wrap">
           <a
             target="_blank"
-            href="https://vitejs.dev/"
-            class="flex flex-col items-center logo-link"
-          >
-            <img class="logo" src="../assets/logo-vite.svg" alt="Logo Vite" />
-            <p>Vite</p>
-          </a>
-          <a
-            target="_blank"
-            href="https://v3.vuejs.org/"
+            href="https://nuxtjs.org/"
             class="flex flex-col items-center logo-link"
           >
             <img
               class="logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
-              alt="Logo Vue"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuxt_logo.svg"
+              alt="Logo Nuxtjs"
             />
-            <p>Vue</p>
+            <p>Nuxtjs</p>
           </a>
           <a
             target="_blank"
