@@ -47,14 +47,14 @@
                 <i class="fab fa-twitter ml-4"></i>
                 <p class="ml-2">abaihaaqi</p>
               </a>
-              <a
+              <!-- <a
                 target="_blank"
                 href="https://instagram.com/abaihaaqi"
                 class="flex items-center hover:text-blue-900"
               >
                 <i class="fab fa-instagram ml-4"></i>
                 <p class="ml-2">abaihaaqi</p>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -133,8 +133,8 @@
       </Card>
     </Container>
     <Container>
-      <Card class="w-screen flex justify-center">
-        <h5 class="mb-4">Side project</h5>
+      <Card class="w-screen lg:w-1/2 flex justify-center">
+        <h5 class="mb-4 text-center">Side project</h5>
         <div class="flex justify-center">
           <a
             target="_blank"
@@ -150,9 +150,7 @@
           </a>
         </div>
       </Card>
-    </Container>
-    <Container>
-      <Card class="w-screen flex justify-center">
+      <Card class="mt-6 lg:mt-3 w-screen lg:w-1/2 lg:ml-6 flex justify-center">
         <h4 class="text-center mb-4">Contacts</h4>
         <div>
           <a target="_blank" href="mailto:nizarbaihaq@gmail.com">
