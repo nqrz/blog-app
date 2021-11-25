@@ -49,7 +49,7 @@ export default {
         url: "https://nizarbaihaqi.com",
         title: "Nizar Baihaqi",
         site_name: "Nizar Baihaqi",
-        description: "A Web Developer from Indonesia",
+        description: "Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️",
         img: "ijay.jpg",
         img_size: { width: "500", height: "500" },
         locale: "en_US",
