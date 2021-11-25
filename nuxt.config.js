@@ -46,11 +46,11 @@ export default {
   modules: [
     [ "nuxt-social-meta",
       {
-        url: "https://nizarbaihaqi.com",
+        url: "https://nizarbaihaqi.com/",
         title: "Nizar Baihaqi",
         site_name: "Nizar Baihaqi",
         description: "Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️",
-        img: "ijay.jpg",
+        img: "https://nizarbaihaqi.com/ijay.jpg",
         img_size: { width: "549", height: "549" },
         locale: "en_US",
         twitter: "@abaihaaqi",
