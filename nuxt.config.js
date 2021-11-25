@@ -50,7 +50,7 @@ export default {
         title: "Nizar Baihaqi",
         site_name: "Nizar Baihaqi",
         description: "A Web Developer from Indonesia",
-        img: "./ijay.jpg",
+        img: "ijay.jpg",
         img_size: { width: "500", height: "500" },
         locale: "en_US",
         twitter: "@abaihaaqi",
