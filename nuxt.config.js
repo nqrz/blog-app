@@ -54,7 +54,7 @@ export default {
         img_size: { width: "549", height: "549" },
         locale: "en_US",
         twitter: "@abaihaaqi",
-        twitter_card: "summary_large_image",
+        twitter_card: "summary",
         theme_color: "#00FFFF",
       },
     ]
