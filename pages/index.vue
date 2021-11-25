@@ -2,13 +2,45 @@
   <div>
     <Hero>
       <img
-        src="../assets/logo-aqua.svg"
-        alt="Logo Nizar Baihaqi"
-        class="w-28 mb-2"
+        src="~/assets/ijay.jpg"
+        alt="Nizar Baihaqi"
+        class="w-40 rounded-full"
       />
-      <h1 class="font-bold mb-4 px-10">Welcome to my website</h1>
-      <h6>“We’re not perfect, but we’re finding perfection”</h6>
+      <h1 class="font-bold mb-4 px-10">Nizar Baihaqi</h1>
+      <h6>Today is the day 🐣</h6>
     </Hero>
+    <Container>
+      <Card class="flex justify-center">
+        <h5 class="text-center">Skill set</h5>
+        <div class="flex justify-center px-1 flex-wrap">
+          <a
+            target="_blank"
+            href="https://nuxtjs.org/"
+            class="flex flex-col items-center logo-link"
+          >
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuxt_logo.svg"
+              alt="Logo Nuxtjs"
+            />
+            <p>Nuxtjs</p>
+          </a>
+          <a
+            target="_blank"
+            href="https://tailwindcss.com/"
+            class="flex flex-col items-center logo-link"
+          >
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Logo Tailwindcss"
+            />
+            <p>Tailwindcss</p>
+          </a>
+        </div>
+      </Card>
+    </Container>
+    <h3 class="text-center my-4">Projects</h3>
     <Container>
       <Card :button="true" url="https://greialdy.netlify.app">
         <h4 class="text-center mb-4">😎 Landing Page</h4>
@@ -20,17 +52,17 @@
       </Card>
     </Container>
     <Container>
-      <Card class="w-screen lg:w-8/12">
+      <Card class="lg:w-8/12">
         <div class="block md:flex">
-          <div class="lg:ml-2 flex justify-center">
+          <div class="md:ml-2 flex justify-center">
             <img
-              src="../assets/ijay.jpg"
+              src="~/assets/ijay.jpg"
               alt="Nizar Baihaqi"
               class="h-full w-1/2 md:w-full rounded-md"
             />
           </div>
-          <div class="lg:ml-6">
-            <h4 class="font-semibold mb-2 text-center lg:text-left">
+          <div class="md:ml-6">
+            <h4 class="font-semibold mb-2 text-center md:text-left">
               Nizar Baihaqi
             </h4>
             <p>
@@ -43,7 +75,7 @@
                 href="https://github.com/nqrz"
                 class="flex items-center hover:text-blue-900"
               >
-                <i class="fab fa-github lg:ml-4"></i>
+                <i class="fab fa-github md:ml-4"></i>
                 <p class="ml-2">nqrz</p>
               </a>
               <a
@@ -66,26 +98,7 @@
           </div>
         </div>
       </Card>
-      <Card class="lg:ml-6 w-screen lg:w-4/12 flex justify-center">
-        <h4 class="text-center mb-4">Contacts</h4>
-        <div>
-          <a target="_blank" href="mailto:nizarbaihaq@gmail.com">
-            <button class="rounded w-full">
-              <i class="far fa-envelope"></i> nizarbaihaq@gmail.com
-            </button>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/nizar-baihaqi/">
-            <button class="rounded w-full mt-3">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </button>
-          </a>
-          <a target="_blank" href="https://dribbble.com/ijaybaihaqi">
-            <button class="rounded w-full mt-3">
-              <i class="fab fa-dribbble"></i> Dribbble
-            </button>
-          </a>
-        </div>
-      </Card>
+      <Contacts />
     </Container>
   </div>
 </template>

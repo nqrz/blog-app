@@ -4,13 +4,12 @@
       flex
       justify-center
       max-w-full
-      bg-gradient-to-tr
-      from-blue-600
-      to-blue-700
+      bg-blue-700
       text-gray-200
       sticky
       top-0
-      z-50
+      z-50 
+      bg-opacity-80
     "
   >
     <div

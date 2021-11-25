@@ -173,30 +173,3 @@
     </Container>
   </div>
 </template>
-
-<style scoped>
-.img {
-  height: 200px;
-  width: 200px;
-  max-width: 200px;
-}
-
-.logo-link {
-  @apply px-2;
-  transition: 0.2s ease-in-out all;
-}
-
-.logo-link:hover {
-  transform: scale(1.05);
-}
-
-.logo {
-  height: 100px;
-  width: 100px;
-  max-width: 100px;
-}
-
-.logo:active {
-  transform: scale(0.9);
-}
-</style>

@@ -7,6 +7,6 @@
 <style scoped>
 .hero {
   margin-top: -48px;
-  margin-bottom: -75px;
+  margin-bottom: -76px;
 }
 </style>

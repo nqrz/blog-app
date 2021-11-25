@@ -2,7 +2,7 @@
   <div>
     <Hero>
       <h1 class="font-bold mb-4">Projects</h1>
-      <h6>Look what i've done 😲</h6>
+      <h6>I will post here for my projects 😲</h6>
       <code class="mt-2">Disclaimer: Some of these project maybe still in Development</code>
       <code>please be patient 👌</code>
     </Hero>
