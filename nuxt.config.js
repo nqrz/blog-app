@@ -51,7 +51,7 @@ export default {
         site_name: "Nizar Baihaqi",
         description: "Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️",
         img: "ijay.jpg",
-        img_size: { width: "500", height: "500" },
+        img_size: { width: "549", height: "549" },
         locale: "en_US",
         twitter: "@abaihaaqi",
         twitter_card: "summary_large_image",
