@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A Web Developer from Indonesia' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     script: [
@@ -44,6 +44,20 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [ "nuxt-social-meta",
+      {
+        url: "https://nizarbaihaqi.com",
+        title: "Nizar Baihaqi",
+        site_name: "Nizar Baihaqi",
+        description: "A Web Developer from Indonesia",
+        img: "./ijay.jpg",
+        img_size: { width: "500", height: "500" },
+        locale: "en_US",
+        twitter: "@abaihaaqi",
+        twitter_card: "summary_large_image",
+        theme_color: "#00FFFF",
+      },
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
