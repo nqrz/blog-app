@@ -22,7 +22,7 @@
         Take a look &rarr;
       </a>
     </div>
-    <a target="_blank" :href="url" v-show="button" class="hidden lg:block">
+    <a target="_blank" :href="url" v-show="button" class="hidden z-0 lg:block">
       <button class="btn h-full lg:rounded-r-lg px-4">
         <i class="fas fa-chevron-right text-white text-4xl"></i>
       </button>

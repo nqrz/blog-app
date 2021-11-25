@@ -10,6 +10,7 @@
       text-gray-200
       sticky
       top-0
+      z-50
     "
   >
     <div
