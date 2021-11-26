@@ -22,7 +22,7 @@
       <NuxtLink to="/" class="flex ml-2 text-gray-800 hover:text-black dark:text-blue-200  dark:hover:text-white">
         <img src="~assets/logo-dark.svg" alt="logo" class="w-6" v-if="$colorMode.preference == 'light'" />
         <img src="~assets/logo-aqua.svg" alt="logo" class="w-6" v-else />
-        <span class="ml-2 font-bold">
+        <span class="ml-2 font-bold hidden sm:block">
           Nizar Baihaqi
         </span>
       </NuxtLink>
