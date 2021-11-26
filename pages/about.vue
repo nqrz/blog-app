@@ -1,3 +1,17 @@
+<script>
+export default {
+  head({$seoMeta}){
+    return {
+      title: 'About Me',
+      meta: $seoMeta({
+        title: 'About Me',
+        description: 'Hello there, check my profile here at my own website. 😎'
+      }, false)
+    }
+  }
+}
+</script>
+
 <template>
   <div>
     <Hero>

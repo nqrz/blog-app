@@ -5,7 +5,7 @@ export default {
       title: 'Projects',
       meta: $seoMeta({
         title: 'Projects',
-        description: 'Project page description'
+        description: 'This is where i post my projects 👌'
       }, false)
     }
   }

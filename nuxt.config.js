@@ -47,6 +47,17 @@ export default {
   modules: [
     "nuxt-seo-meta",
   ],
+  
+  // Seo Meta
+  seoMeta: {
+    title: 'Nizar Baihaqi',
+    defaultDescription: 'Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️',
+    defaultUrl: 'https://nizarbaihaqi.com/',
+    defaultImage: 'https://nizarbaihaqi.com/banner.jpg',
+    locale: 'en_US',
+    siteName: 'Nizar Baihaqi',
+    twitterUser: '@abaihaaqi'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -63,14 +74,4 @@ export default {
 
   // Page Transition
   pageTransition: 'page',
-
-  // Seo Meta
-  seoMeta: {
-    dafaultDescription: 'Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️',
-    defaultUrl: 'https://nizarbaihaqi.com/',
-    defaultImage: 'https://nizarbaihaqi.com/banner.jpg',
-    locale: 'en_US',
-    siteName: 'Nizar Baihaqi',
-    twitterUser: '@abaihaaqi'
-  }
 }
