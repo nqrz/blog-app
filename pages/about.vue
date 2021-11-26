@@ -4,13 +4,6 @@
       <div>
         <p class="text-9xl mb-8">🐱‍💻</p>
         <h1 class="font-bold mb-4">About me</h1>
-        <a
-          target="_blank"
-          href="https://learn.g2.com/what-is-lorem-ipsum"
-          class="hover:text-gray-500"
-        >
-          <h6 class="transform hover:scale-150 transition-all">What is lorem ipsum? 🧐</h6>
-        </a>
       </div>
     </Hero>
     <Container>
