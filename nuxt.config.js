@@ -45,20 +45,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    [ "nuxt-social-meta",
-      {
-        url: "https://nizarbaihaqi.com/",
-        title: "Nizar Baihaqi",
-        site_name: "Nizar Baihaqi",
-        description: "Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️",
-        img: "https://nizarbaihaqi.com/ijay.jpg",
-        img_size: { width: "549", height: "549" },
-        locale: "en_US",
-        twitter: "@abaihaaqi",
-        twitter_card: "summary",
-        theme_color: "#00FFFF",
-      },
-    ]
+    "nuxt-seo-meta",
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -75,5 +62,15 @@ export default {
   },
 
   // Page Transition
-  pageTransition: 'page'
+  pageTransition: 'page',
+
+  // Seo Meta
+  seoMeta: {
+    dafaultDescription: 'Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️',
+    defaultUrl: 'https://nizarbaihaqi.com/',
+    defaultImage: 'https://nizarbaihaqi.com/banner.jpg',
+    locale: 'en_US',
+    siteName: 'Nizar Baihaqi',
+    twitterUser: '@abaihaaqi'
+  }
 }

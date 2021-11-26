@@ -1,3 +1,17 @@
+<script>
+export default {
+  head({$seoMeta}){
+    return {
+      title: 'Projects',
+      meta: $seoMeta({
+        title: 'Projects',
+        description: 'Project page description'
+      }, false)
+    }
+  }
+}
+</script>
+
 <template>
   <div>
     <Hero>
