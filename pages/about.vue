@@ -5,7 +5,8 @@ export default {
       title: 'About Me',
       meta: $seoMeta({
         title: 'About Me',
-        description: 'Hello there, check my profile here at my own website. 😎'
+        description: 'Hello there, check my profile here at my own website. 😎',
+        url: 'https://nizarbaihaqi.com/about'
       }, false)
     }
   }

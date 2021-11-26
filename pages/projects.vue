@@ -5,7 +5,8 @@ export default {
       title: 'Projects',
       meta: $seoMeta({
         title: 'Projects',
-        description: 'This is where i post my projects 👌'
+        description: 'This is where i post my projects 👌',
+        url: 'https://nizarbaihaqi.com/projects'
       }, false)
     }
   }
