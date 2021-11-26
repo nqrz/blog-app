@@ -3,6 +3,7 @@
     class="
       lg:rounded-lg
       bg-indigo-50
+      dark:bg-gray-700
       shadow-xl
       flex
       my-3
@@ -23,7 +24,7 @@
       </a>
     </div>
     <a target="_blank" :href="url" v-show="button" class="hidden z-0 lg:block">
-      <button class="btn h-full lg:rounded-r-lg px-4">
+      <button class="btn btn-card h-full lg:rounded-r-lg px-6">
         <i class="fas fa-chevron-right text-white text-4xl"></i>
       </button>
     </a>
@@ -41,12 +42,12 @@ export default {
 
 <style scoped>
 @media (min-width: 1024px) {
-  .btn {
+  .btn-card {
     transform: translateX(55px);
     transition: 0.4s ease-in-out all;
   }
 
-  .card:hover .btn {
+  .card:hover .btn-card {
     transform: translateX(0px);
   }
 }

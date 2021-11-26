@@ -2,67 +2,23 @@
   <div>
     <Hero>
       <div>
+        <p class="text-9xl mb-8">🐱‍💻</p>
         <h1 class="font-bold mb-4">About me</h1>
         <a
           target="_blank"
           href="https://learn.g2.com/what-is-lorem-ipsum"
-          class="hover:text-white"
+          class="hover:text-gray-500"
         >
-          <h6>What is lorem ipsum? 🧐</h6>
+          <h6 class="transform hover:scale-150 transition-all">What is lorem ipsum? 🧐</h6>
         </a>
       </div>
     </Hero>
     <Container>
-      <Card>
-        <div class="block lg:flex">
-          <div class="flex justify-center">
-            <img
-              src="../assets/ijay.jpg"
-              alt="Nizar Baihaqi"
-              class="rounded-md img"
-            />
-          </div>
-          <div class="lg:ml-6">
-            <h4 class="font-semibold mb-2 text-center lg:text-left">
-              Nizar Baihaqi
-            </h4>
-            <p>
-              Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I
-              have experience at building website with Jamstack application.
-            </p>
-            <div class="mt-14 flex">
-              <a
-                target="_blank"
-                href="https://github.com/nqrz"
-                class="flex items-center hover:text-blue-900"
-              >
-                <i class="fab fa-github ml-4"></i>
-                <p class="ml-2">nqrz</p>
-              </a>
-              <a
-                target="_blank"
-                href="https://twitter.com/abaihaaqi"
-                class="flex items-center hover:text-blue-900"
-              >
-                <i class="fab fa-twitter ml-4"></i>
-                <p class="ml-2">abaihaaqi</p>
-              </a>
-              <!-- <a
-                target="_blank"
-                href="https://instagram.com/abaihaaqi"
-                class="flex items-center hover:text-blue-900"
-              >
-                <i class="fab fa-instagram ml-4"></i>
-                <p class="ml-2">abaihaaqi</p>
-              </a> -->
-            </div>
-          </div>
-        </div>
-      </Card>
+      <Me />
     </Container>
     <Container>
-      <Card class="w-screen lg:w-1/2 flex justify-center">
-        <h5 class="text-center mb-4">Tech stack (This web)</h5>
+      <Card class="w-screen lg:w-5/12 flex justify-center">
+        <h5 class="text-center mb-4">Tech stack</h5>
         <div class="flex justify-center px-1 flex-wrap">
           <a
             target="_blank"
@@ -90,7 +46,7 @@
           </a>
         </div>
       </Card>
-      <Card class="mt-6 lg:mt-3 w-screen lg:w-1/2 lg:ml-6 flex justify-center">
+      <Card class="mt-6 lg:mt-3 w-screen lg:w-7/12 lg:ml-6 flex justify-center">
         <h5 class="text-center mb-4">Basic skill</h5>
         <div class="flex justify-center flex-wrap">
           <a
@@ -150,26 +106,7 @@
           </a>
         </div>
       </Card>
-      <Card class="mt-6 lg:mt-3 w-screen lg:w-1/2 lg:ml-6 flex justify-center">
-        <h4 class="text-center mb-4">Contacts</h4>
-        <div>
-          <a target="_blank" href="mailto:nizarbaihaq@gmail.com">
-            <button class="rounded w-full">
-              <i class="far fa-envelope"></i> nizarbaihaq@gmail.com
-            </button>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/nizar-baihaqi/">
-            <button class="rounded w-full mt-3">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </button>
-          </a>
-          <a href="https://dribbble.com/ijaybaihaqi">
-            <button class="rounded w-full mt-3">
-              <i class="fab fa-dribbble"></i> Dribbble
-            </button>
-          </a>
-        </div>
-      </Card>
+      <Contacts class="mt-6 lg:mt-3 w-screen lg:w-1/2 lg:ml-6" />
     </Container>
   </div>
 </template>

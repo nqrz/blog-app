@@ -1,17 +1,14 @@
 <template>
   <div>
     <Hero>
-      <img
-        src="~/assets/ijay.jpg"
-        alt="Nizar Baihaqi"
-        class="w-40 rounded-full"
-      />
-      <h1 class="font-bold mb-4 px-10">Nizar Baihaqi</h1>
+      <img src="~assets/logo-dark.svg" alt="logo" class="w-40" v-if="$colorMode.preference == 'light'" />
+      <img src="~assets/logo-aqua.svg" alt="logo" class="w-40" v-else />
+      <h1 class="font-bold my-4 px-10">Nizar Baihaqi</h1>
       <h6>Today is the day 🐣</h6>
     </Hero>
     <Container>
-      <Card class="flex justify-center">
-        <h5 class="text-center">Skill set</h5>
+      <Card>
+        <h4 class="text-center">🛠️ Skill set</h4>
         <div class="flex justify-center px-1 flex-wrap">
           <a
             target="_blank"
@@ -52,53 +49,8 @@
       </Card>
     </Container>
     <Container>
-      <Card class="lg:w-8/12">
-        <div class="block md:flex">
-          <div class="md:ml-2 flex justify-center">
-            <img
-              src="~/assets/ijay.jpg"
-              alt="Nizar Baihaqi"
-              class="h-full w-1/2 md:w-full rounded-md"
-            />
-          </div>
-          <div class="md:ml-6">
-            <h4 class="font-semibold mb-2 text-center md:text-left">
-              Nizar Baihaqi
-            </h4>
-            <p>
-              Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I
-              have experience at building website with Jamstack application.
-            </p>
-            <div class="mt-14 flex">
-              <a
-                target="_blank"
-                href="https://github.com/nqrz"
-                class="flex items-center hover:text-blue-900"
-              >
-                <i class="fab fa-github md:ml-4"></i>
-                <p class="ml-2">nqrz</p>
-              </a>
-              <a
-                target="_blank"
-                href="https://twitter.com/abaihaaqi"
-                class="flex items-center hover:text-blue-900"
-              >
-                <i class="fab fa-twitter ml-4"></i>
-                <p class="ml-2">abaihaaqi</p>
-              </a>
-              <a
-                target="_blank"
-                href="https://instagram.com/abaihaaqi"
-                class="flex items-center hover:text-blue-900"
-              >
-                <i class="fab fa-instagram ml-4"></i>
-                <p class="ml-2">abaihaaqi</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </Card>
-      <Contacts />
+      <Me class="lg:w-8/12" />
+      <Contacts class="lg:ml-6 lg:w-4/12"/>
     </Container>
   </div>
 </template>
