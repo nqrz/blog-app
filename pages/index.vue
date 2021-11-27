@@ -37,17 +37,6 @@
         </div>
       </Card>
     </Container>
-    <h3 class="text-center my-4">Projects</h3>
-    <Container>
-      <Card :button="true" url="https://greialdy.netlify.app">
-        <h4 class="text-center mb-4">😎 Landing Page</h4>
-        <p class="mb-4">
-          I created landing page that fit for portofolio, company profile, and
-          many more. That needs an online professional profile for their career.
-        </p>
-        <p>(This is my friend request)</p>
-      </Card>
-    </Container>
     <Container>
       <Me class="lg:w-8/12" />
       <Contacts class="lg:ml-6 lg:w-4/12"/>

@@ -46,6 +46,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     "nuxt-seo-meta",
+    "@nuxt/content",
   ],
   
   // Seo Meta
