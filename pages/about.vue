@@ -42,7 +42,7 @@ export default {
           </a>
           <a
             target="_blank"
-            href="https://tailwindcss.com/"
+            href="https://windicss.org/"
             class="flex flex-col items-center logo-link"
           >
             <img
