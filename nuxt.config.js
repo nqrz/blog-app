@@ -38,8 +38,9 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/dotenv',
     '@nuxtjs/color-mode',
+    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
 
@@ -47,6 +48,10 @@ export default {
   modules: [
     "nuxt-seo-meta",
     "@nuxt/content",
+    ['nuxt-supabase', {
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_API_KEY
+    }]
   ],
   
   // Seo Meta

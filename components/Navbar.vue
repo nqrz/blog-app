@@ -31,11 +31,12 @@
           <i class="fas fa-sun transition-all" v-if="$colorMode.preference == 'light'"></i>
           <i class="fas fa-moon" v-else></i>
         </button>
-        <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/articles">Articles</NuxtLink>
-        <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/projects"
-          >Projects</NuxtLink
-        >
+        <!-- <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/articles">Articles</NuxtLink> -->
+        <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/projects">Projects</NuxtLink>
         <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/about">About me</NuxtLink>
+        <NuxtLink v-if="auth" class="mr-4 hover:text-black dark:hover:text-white" to="/todos">Todos</NuxtLink>
+        <button v-if="auth" @click="signOut" class="mr-4 hover:text-black dark:hover:text-white">Logout</button>
+        <button @click="$emit('toggle-login')" v-else class="mr-4 hover:text-black dark:hover:text-white">Login</button>
       </div>
     </div>
   </div>
@@ -43,6 +44,9 @@
 
 <script>
 export default {
+  props: {
+    auth: Boolean
+  },
   methods: {
     toggleColor () {
       if (this.$colorMode.preference == "dark") {
@@ -50,6 +54,9 @@ export default {
       } else {
         this.$colorMode.preference = "dark"
       }
+    },
+    async signOut () {
+      await this.$supabase.auth.signOut()
     }
   }
 }

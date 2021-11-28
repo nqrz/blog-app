@@ -31,6 +31,7 @@ export default {
       <code class="mt-2">Disclaimer: Some of these project maybe still in Development</code>
       <code>please be patient 👌</code>
     </Hero>
+    <h6 class="text-center">Newest updated project</h6>
     <Container v-for="project in projects" :key="project.slug">
       <Card :link="true" :url="project.path">
         <h4 class="text-center">{{ project.title }}</h4>

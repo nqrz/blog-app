@@ -1,9 +1,11 @@
 <template>
   <article>
     <Hero>
-      <h1>hei</h1>  
+      <h1>hei</h1>
+      <h6>There's no article currently.</h6>
+      <p>but, thanks for coming</p>
     </Hero>
-    <Container>
+    <!-- <Container>
       <input v-model="searchQuery" autocomplete="off" placeholder="Search Category" class="p-3 rounded-md">
     </Container>
     <Container v-for="article in articles" :key="article.slug">
@@ -12,7 +14,7 @@
         <h4>{{ article.description }}</h4>
         <NuxtLink :to="article.path">Read more &rarr;</NuxtLink>
       </Card>
-    </Container>
+    </Container> -->
   </article>
 </template>
 

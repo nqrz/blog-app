@@ -4,7 +4,10 @@
       <img src="~assets/logo-dark.svg" alt="logo" class="w-40" v-if="$colorMode.preference == 'light'" />
       <img src="~assets/logo-aqua.svg" alt="logo" class="w-40" v-else />
       <h1 class="font-bold my-4 px-10">Nizar Baihaqi</h1>
-      <h6>Today is the day 🐣</h6>
+      <div>
+        <h6>Counter: {{ counter }}</h6>
+        <button class="btn rounded-md" @click="addCount">Add count</button>
+      </div>
     </Hero>
     <Container>
       <Card>
@@ -43,6 +46,21 @@
     </Container>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    counter () {
+      return this.$store.state.counter
+    }
+  },
+  methods: {
+    addCount () {
+      this.$store.commit('increment')
+    },
+  }
+}
+</script>
 
 <style scoped>
 .spin {
