@@ -1,8 +1,8 @@
 <template>
   <div>
     <Hero>
-      <img src="~assets/logo-dark.svg" alt="logo" class="w-40" v-if="$colorMode.preference == 'light'" />
-      <img src="~assets/logo-aqua.svg" alt="logo" class="w-40" v-else />
+      <img src="~assets/logo-dark.svg" alt="logo" class="w-40 spin" v-if="$colorMode.preference == 'light'" />
+      <img src="~assets/logo-aqua.svg" alt="logo" class="w-40 spin" v-else />
       <h1 class="font-bold my-4 px-10">Nizar Baihaqi</h1>
       <div>
         <h6>Counter: {{ counter }}</h6>
@@ -27,15 +27,15 @@
           </a>
           <a
             target="_blank"
-            href="https://tailwindcss.com/"
+            href="https://windicss.org"
             class="flex flex-col items-center logo-link"
           >
             <img
               class="logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-              alt="Logo Tailwindcss"
+              src="https://windicss.org/assets/logo.svg"
+              alt="Logo Windicss"
             />
-            <p>Tailwindcss</p>
+            <p>Windicss</p>
           </a>
         </div>
       </Card>

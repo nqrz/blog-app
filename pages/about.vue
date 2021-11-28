@@ -47,10 +47,10 @@ export default {
           >
             <img
               class="logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-              alt="Logo Tailwindcss"
+              src="https://windicss.org/assets/logo.svg"
+              alt="Logo Windicss"
             />
-            <p>Tailwindcss</p>
+            <p>Windicss</p>
           </a>
         </div>
       </Card>
