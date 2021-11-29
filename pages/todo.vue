@@ -1,0 +1,72 @@
+<template>
+  <div class="bg-gradient-to-tr from-indigo-200 to-gray-50 dark:from-gray-600 dark:to-indigo-900 dark:text-indigo-200">
+    <div class="flex flex-col items-center py-40">
+      <h1>Todo list</h1>
+      <p class="mb-2">{{ formatDate(Date.now()) }}</p>
+      <div class="w-sm">
+        <Card>
+          <ul>
+            <li v-for="todo in todos" :key="todo.id" class="flex justify-between items-center w-full py-1">
+              <div>
+                <input :checked="todo.done" @change="toggle(todo)" type="checkbox" :id="todo.id">
+                <label :class="{ done: todo.done }" :for="todo.id">{{ todo.text }}</label>
+              </div>
+              <button class="btn rounded-md" @click="removeTodo(todo)">remove</button>
+            </li>
+          </ul>
+          <input class="w-full" type="text" @keyup.enter="addTodo" v-model="text" placeholder="What needs to be done?">
+          <transition name="slide-fade">
+            <WarnBox v-if="error">
+              {{ error }}
+            </WarnBox>
+          </transition>
+        </Card>
+        <InfoBox>
+          Press enter to submit
+        </InfoBox>
+        <InfoBox>
+          This list is stored with Vuex. Erased if web is reloaded. But, go to another routes and back is not going to erase this list
+        </InfoBox>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { mapMutations } from 'vuex'
+
+export default {
+  data() {
+    return {
+      text: '',
+      error: ''
+    }
+  },
+  computed: {
+    todos () {
+      return this.$store.state.todos.list
+    }
+  },
+  methods: {
+    addTodo () {
+      if (!this.text) {
+        this.error = 'Please type something.'
+      } else {
+        this.$store.commit('todos/add', this.text)
+        this.text = ''
+        this.error = ''
+      }
+    },
+    ...mapMutations({
+      toggle: 'todos/toggle'
+    }),
+    removeTodo (todo){
+      this.$store.commit('todos/remove', todo)
+    },
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
+  }
+}
+</script>

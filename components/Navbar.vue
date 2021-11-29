@@ -31,7 +31,8 @@
           <i class="fas fa-sun transition-all" v-if="$colorMode.preference == 'light'"></i>
           <i class="fas fa-moon" v-else></i>
         </button>
-        <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/maintenance">Projects</NuxtLink>
+        <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/projects">Projects</NuxtLink>
+        <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/todo">Todo</NuxtLink>
         <NuxtLink class="mr-4 hover:text-black dark:hover:text-white" to="/about">About me</NuxtLink>
       </div>
     </div>

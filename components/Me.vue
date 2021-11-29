@@ -3,7 +3,7 @@
     <div class="block md:flex">
       <div class="md:ml-2 flex justify-center">
         <img
-          src="~/assets/ijay.jpg"
+          src="~/assets/ijay-2.jpg"
           alt="Nizar Baihaqi"
           class="rounded-md img"
         />

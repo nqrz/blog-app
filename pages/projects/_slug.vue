@@ -1,9 +1,9 @@
 <template>
-  <article>
+  <div>
     <Hero>
       <h1>{{ project.title }}</h1>
       <div class="flex gap-4">
-        <div class="text-gray-300" v-for="category in project.category" :key="category">
+        <div class="text-gray-700 dark:text-gray-300" v-for="category in project.category" :key="category">
           {{ category }}
         </div>
       </div>
@@ -15,7 +15,7 @@
             <nav>
               <ul>
                 <li v-for="link of project.toc" :key="link.id">
-                  <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+                  <NuxtLink :to="`#${link.id}`"><i class="fas fa-hashtag"></i> {{ link.text }}</NuxtLink>
                 </li>
               </ul>
             </nav>
@@ -32,12 +32,14 @@
       </div>
       <div class="w-9/12 ml-4">
         <Card>
-          <nuxt-content :document="project" />
+          <article>
+            <nuxt-content :document="project" />
+          </article>
         </Card>
         <PrevNext :prev="prev" :next="next" />
       </div>
     </Container>
-  </article>
+  </div>
 </template>
 
 <script>
@@ -56,7 +58,7 @@ export default {
       .surround(params.slug)
       .fetch()
 
-    const author = await $content('authors', project.author).fetch()
+    const author = await $content('profile', project.author).fetch()
 
     return {
       project,

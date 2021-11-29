@@ -39,19 +39,23 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/color-mode',
-    'nuxt-windicss',
+    '@nuxtjs/tailwindcss',
   ],
-
-  // Windicss
-  windicss: {
-    analyze: true
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     "nuxt-seo-meta",
     "@nuxt/content"
   ],
+
+  // Content
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
+  },
   
   // Seo Meta
   seoMeta: {

@@ -42,15 +42,15 @@ export default {
           </a>
           <a
             target="_blank"
-            href="https://windicss.org/"
+            href="https://tailwindcss.com/"
             class="flex flex-col items-center logo-link"
           >
             <img
               class="logo"
-              src="https://windicss.org/assets/logo.svg"
-              alt="Logo Windicss"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Logo Tailwindcss"
             />
-            <p>Windicss</p>
+            <p>Tailwindcss</p>
           </a>
         </div>
       </Card>
