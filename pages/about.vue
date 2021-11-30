@@ -25,7 +25,7 @@ export default {
       <Me />
     </Container>
     <Container>
-      <Card class="w-screen lg:w-5/12 flex justify-center">
+      <Card class="w-full lg:w-5/12 flex justify-center">
         <h5 class="text-center mb-4">Tech stack</h5>
         <div class="flex justify-center px-1 flex-wrap">
           <a
@@ -54,7 +54,7 @@ export default {
           </a>
         </div>
       </Card>
-      <Card class="mt-6 lg:mt-3 w-screen lg:w-7/12 lg:ml-6 flex justify-center">
+      <Card class="mt-6 lg:mt-3 w-full lg:w-7/12 lg:ml-6 flex justify-center">
         <h5 class="text-center mb-4">Basic skill</h5>
         <div class="flex justify-center flex-wrap">
           <a
@@ -97,7 +97,7 @@ export default {
       </Card>
     </Container>
     <Container>
-      <Card class="w-screen lg:w-1/2 flex justify-center">
+      <Card class="w-full lg:w-1/2 flex justify-center">
         <h5 class="mb-4 text-center">Side project</h5>
         <div class="flex justify-center">
           <a
@@ -114,7 +114,7 @@ export default {
           </a>
         </div>
       </Card>
-      <Contacts class="mt-6 lg:mt-3 w-screen lg:w-1/2 lg:ml-6" />
+      <Contacts class="mt-6 lg:mt-3 w-full lg:w-1/2 lg:ml-6" />
     </Container>
   </div>
 </template>

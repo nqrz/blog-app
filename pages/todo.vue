@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-tr from-pastel-gray to-pastel-blue dark:from-night-gray dark:to-night-purple">
+  <div class="bg-gradient-to-tr from-pastel-gray to-pastel-blue dark:from-night-black dark:to-night-purple">
     <div class="flex flex-col items-center py-40">
       <h1>Todo list</h1>
       <p class="mb-2">{{ formatDate(Date.now()) }}</p>

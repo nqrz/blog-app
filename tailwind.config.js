@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: [],
+  mode: 'jit',
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     colors: {
@@ -18,7 +19,7 @@ module.exports = {
         cream: '#FFE3E3'
       },
       night: {
-        black: '#151515',
+        black: '#00001a',
         purple: '#301B3F',
         gray: '#3C415C',
         light: '#B4A5A5'

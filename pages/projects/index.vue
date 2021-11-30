@@ -14,13 +14,17 @@ export default {
     return {
       searchQuery: '',
       projects: [],
-      category: [],
+      category: []
     }
   },
-  async mounted() {
-    this.projects = await this.$content('projects')
+  async asyncData({ $content }) {
+    const projects = await $content('projects')
       .sortBy('updatedAt', 'desc')
       .fetch()
+
+    return {
+      projects
+    }
   },
   watch: {
     async searchQuery(searchQuery) {
@@ -56,7 +60,12 @@ export default {
         <button class="btn rounded-md" @click="searchQuery = 'tailwindcss'">Tailwindcss</button>
       </div>
     </Container>
-    <Container class="mt-4">
+    <Container v-if="projects[0] === undefined">
+      <WarnBox class="sm:w-full">
+        There's no project match.
+      </WarnBox>
+    </Container>
+    <Container v-else class="mt-4">
       <div class="w-full lg:w-2/3">
         <h6 class="text-center">Newest updated project</h6>
       </div>

@@ -19,7 +19,7 @@
           Check &rarr;
         </NuxtLink>
       </Card>
-      <Card class="w-full md:w-5/12 md:ml-6">
+      <Card class="w-full md:w-5/12 md:ml-6 mt-6 lg:mt-3">
           <h4 class="text-center ">🛠️ Tech stack</h4>
           <Logo :category="projectHighlight.category" />
       </Card>
@@ -39,7 +39,7 @@
     </Container>
     <Container>
       <Me class="md:w-8/12" />
-      <Contacts class="md:ml-6 md:w-4/12"/>
+      <Contacts class="md:ml-6 md:w-4/12 mt-6 lg:mt-3"/>
     </Container>
   </div>
 </template>

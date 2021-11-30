@@ -17,7 +17,7 @@ Sejauh ini saya telah membuat website ini memiliki 4 halaman, yaitu, Homepage, P
 
 Halaman Todo memiliki aplikasi daftar list hal yang akan dilakukan, user akan memasukkan satu-persatu kegiatan yang akan dilakukan. Namun list ini tidak akan disimpan di Database. Akan terhapus setelah reload. Halaman terakhir, About Me, memiliki profil saya secara lengkap, teknologi yang saya gunakan dan tombol kontak saya.
 
-## Tech stackkk
+## Tech stack
 
 #### [Nuxtjs](https://nuxtjs.org/) &#8599;
 
@@ -31,9 +31,9 @@ Saya lebih memilih Tailwindcss daripada bootstrap karena tailwindcss memiliki fl
 
 - [x] *light/dark mode*
 - [x] Dukungan *markdown*
-- [ ] *Error warning* ketika *.fetch() content*
+- [x] *Responsive Navbar*
+- [ ] SEO page
 - [ ] *Banner image* untuk setiap project.
-- [ ] *Responsive Navbar*
 - [ ] Fitur save todo list ke database (Supabase) + *authentication*
 - [ ] Fitur search berdasarkan teknologi yang digunakan
 - [ ] Ubah link logo ke project yang menggunakan teknologi tsb.
