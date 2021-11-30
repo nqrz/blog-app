@@ -5,7 +5,7 @@
       <div class="w-72">
         <a target="_blank" href="mailto:nizarbaihaq@gmail.com">
           <button class="rounded btn w-full">
-            <i class="far fa-envelope"></i> nizarbaihaq@gmail.com
+            <i class="far fa-envelope"></i> Email me
           </button>
         </a>
         <a target="_blank" href="https://www.linkedin.com/in/nizar-baihaqi/">

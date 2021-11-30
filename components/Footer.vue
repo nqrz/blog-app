@@ -1,5 +1,5 @@
 <template>
-  <div class="block md:flex justify-center py-11 bg-indigo-300 dark:bg-gray-900 dark:text-indigo-200 mt-2">
+  <div class="block md:flex justify-center py-11 bg-indigo-300 dark:bg-gray-900 dark:text-indigo-200">
     <div class="flex flex-col items-center md:items-end md:pr-2">
       <router-link to="/" class="flex">
         <img src="~assets/logo-dark.svg" alt="logo" class="w-6" v-if="$colorMode.preference == 'light'" />

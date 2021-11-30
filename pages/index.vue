@@ -26,7 +26,7 @@
     </Container>
     <h3 class="text-center my-8">Another Project</h3>
     <Container>
-      <div class="flex divide-x-2 divide-dashed divide-gray-700 dark:divide-white mb-4">
+      <div class="block md:flex md:divide-x-2 divide-dashed divide-gray-700 dark:divide-white mb-4">
         <div v-for="project in projects" :key="project.updatedAt" class="w-full md:w-7/12 p-6" :link="true" :url="project.path">
           <h4 class="text-center">{{ project.title }}</h4>
           <p class="text-sm text-center mb-4">Updated at: {{ formatDate(project.updatedAt) }}</p>
