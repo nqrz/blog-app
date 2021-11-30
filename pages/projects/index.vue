@@ -78,7 +78,7 @@ export default {
           Check &rarr;
         </NuxtLink>
       </Card>
-      <Card class="w-1/3 hidden lg:block ml-5">
+      <Card class="w-full lg:w-1/3 hidden lg:block ml-5">
         <Logo :category="project.category" />
       </Card>
     </Container>
