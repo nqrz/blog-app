@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="bg-indigo-200 dark:bg-gray-600 dark:text-gray-200">
+  <div class="bg-pastel-gray dark:bg-night-black dark:text-dark-primary">
     <Navbar />
     <Nuxt />
     <Footer />

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-tr from-indigo-200 to-gray-50 dark:from-gray-600 dark:to-indigo-900 dark:text-indigo-200">
+  <div class="bg-gradient-to-tr from-pastel-gray to-pastel-blue dark:from-night-gray dark:to-night-purple">
     <div class="flex flex-col items-center py-40">
       <h1>Todo list</h1>
       <p class="mb-2">{{ formatDate(Date.now()) }}</p>
@@ -14,7 +14,7 @@
               <button class="btn rounded-md" @click="removeTodo(todo)">remove</button>
             </li>
           </ul>
-          <input class="w-full" type="text" @keyup.enter="addTodo" v-model="text" placeholder="What needs to be done?">
+          <input class="w-full" type="text" @keyup.enter="addTodo" v-model="text" placeholder="What todo next?">
           <transition name="slide-fade">
             <WarnBox v-if="error">
               {{ error }}

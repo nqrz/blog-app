@@ -24,11 +24,11 @@ h6 {
 }
 
 input {
-  @apply rounded-md py-1 px-2 text-black dark:bg-gray-900 dark:text-gray-200 my-2
+  @apply rounded-md py-1 px-2 dark:bg-night-black my-2
 }
 
 .btn {
-  @apply py-1 px-2 bg-blue-500 hover:bg-blue-400 dark:bg-gray-900 dark:hover:bg-gray-800 text-white dark:text-gray-200 transition-all;
+  @apply py-1 px-2 bg-pastel-pink hover:bg-pastel-gray dark:bg-night-gray dark:hover:bg-night-light transition-all
 }
 
 .btn:active {
@@ -41,6 +41,14 @@ a {
 
 .link {
   @apply text-blue-700 dark:text-blue-300 hover:text-blue-500 dark:hover:text-blue-100
+}
+
+.nav-link {
+  @apply text-light-secondary hover:text-black dark:text-dark-primary dark:hover:text-white py-2 px-3 transition-all
+}
+
+.nav-link-active {
+  @apply text-black dark:text-white
 }
 
 .img {

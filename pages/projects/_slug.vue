@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-2">
     <Hero>
       <h1>{{ project.title }}</h1>
       <div class="flex gap-4">
