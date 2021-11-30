@@ -1,13 +1,13 @@
 <template>
   <div class="flex justify-between w-full">
     <div>
-      <NuxtLink v-if="prev" :to="prev.path">
+      <NuxtLink v-if="prev" :to="{ name: 'projects-slug', params: { slug: prev.slug } }">
         &larr; <span class="hover:underline">{{ prev.title }}</span>
       </NuxtLink>
       <span v-else>&nbsp;</span>
     </div>
     <div>
-      <NuxtLink v-if="next" :to="next.path">
+      <NuxtLink v-if="next" :to="{ name: 'projects-slug', params: { slug: next.slug } }">
         <span class="hover:underline">{{ next.title }}</span> &rarr;
       </NuxtLink>
       <span v-else>&nbsp;</span>

@@ -55,6 +55,7 @@ export default {
 
     const [prev, next] = await $content('projects')
       .only(['title', 'slug'])
+      .sortBy('updatedAt', 'desc')
       .surround(params.slug)
       .fetch()
 
