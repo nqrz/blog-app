@@ -74,7 +74,7 @@ export default {
         </div>
         <p class="text-sm mb-4">Updated at: {{ formatDate(project.updatedAt) }}</p>
         <p>{{ project.description }}</p>
-        <NuxtLink :to="project.path">
+        <NuxtLink class="link" :to="project.path">
           Check &rarr;
         </NuxtLink>
       </Card>

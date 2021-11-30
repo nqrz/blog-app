@@ -4,6 +4,7 @@ description: All about this website.
 img: https://nizarbaihaqi.com/
 category: ['nuxtjs', 'tailwindcss']
 author: nqrz
+highlight: true
 ---
 
 # nizarbaihaqi.com

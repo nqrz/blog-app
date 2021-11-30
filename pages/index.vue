@@ -9,46 +9,60 @@
         <button class="btn rounded-md" @click="addCount">Add count</button>
       </div>
     </Hero>
-    <Container>
-      <Card>
-        <h4 class="text-center">🛠️ Skill set</h4>
-        <div class="flex justify-center px-1 flex-wrap">
-          <a
-            target="_blank"
-            href="https://nuxtjs.org/"
-            class="flex flex-col items-center logo-link"
-          >
-            <img
-              class="logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuxt_logo.svg"
-              alt="Logo Nuxtjs"
-            />
-            <p>Nuxtjs</p>
-          </a>
-          <a
-            target="_blank"
-            href="https://tailwindcss.com"
-            class="flex flex-col items-center logo-link"
-          >
-            <img
-              class="logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-              alt="Logo Tailwindcss"
-            />
-            <p>Tailwindcss</p>
-          </a>
-        </div>
+    <h3 class="text-center mt-10">Project highlight</h3>
+    <Container class="mb-6">
+      <Card class="w-full md:w-7/12" :link="true" :url="projectHighlight.path">
+        <h4 class="text-center">{{ projectHighlight.title }}</h4>
+        <p class="text-sm mb-4">Updated at: {{ formatDate(projectHighlight.updatedAt) }}</p>
+        <p>{{ projectHighlight.description }}</p>
+        <NuxtLink class="link" :to="projectHighlight.path">
+          Check &rarr;
+        </NuxtLink>
+      </Card>
+      <Card class="w-full md:w-5/12 md:ml-6">
+          <h4 class="text-center ">🛠️ Tech stack</h4>
+          <Logo :category="projectHighlight.category" />
       </Card>
     </Container>
+    <h3 class="text-center my-8">Another Project</h3>
     <Container>
-      <Me class="lg:w-8/12" />
-      <Contacts class="lg:ml-6 lg:w-4/12"/>
+      <div class="flex divide-x-2 divide-dashed divide-gray-700 dark:divide-white mb-4">
+        <div v-for="project in projects" :key="project.updatedAt" class="w-full md:w-7/12 p-6" :link="true" :url="project.path">
+          <h4 class="text-center">{{ project.title }}</h4>
+          <p class="text-sm text-center mb-4">Updated at: {{ formatDate(project.updatedAt) }}</p>
+          <p class="text-sm">{{ project.description }}</p>
+          <NuxtLink class="link" :to="project.path">
+            Check &rarr;
+          </NuxtLink>
+        </div>
+      </div>
+    </Container>
+    <Container>
+      <Me class="md:w-8/12" />
+      <Contacts class="md:ml-6 md:w-4/12"/>
     </Container>
   </div>
 </template>
 
 <script>
 export default {
+  async asyncData ({ $content }) {
+    const [ projectHighlight ] = await $content('projects')
+      .where({ highlight: true })
+      .without(['body', 'toc'])
+      .fetch()
+    
+    const projects = await $content('projects')
+      .where({ highlight: false })
+      .without(['body', 'toc'])
+      .limit(3)
+      .fetch()
+
+    return {
+      projectHighlight,
+      projects
+    }
+  },
   computed: {
     counter () {
       return this.$store.state.counter
@@ -58,7 +72,11 @@ export default {
     addCount () {
       this.$store.commit('increment')
     },
-  }
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
+  },
 }
 </script>
 
