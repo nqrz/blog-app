@@ -65,7 +65,7 @@ export default {
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-material-oceanic.css'
+        theme: 'prism-themes/themes/prism-night-owl.css'
       }
     }
   },
@@ -75,7 +75,7 @@ export default {
     title: 'Nizar Baihaqi',
     defaultDescription: 'Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️',
     defaultUrl: 'https://nizarbaihaqi.com/',
-    defaultImage: 'https://nizarbaihaqi.com/banner.jpg',
+    defaultImage: 'https://nizarbaihaqi.com/logo-dark-350x350-bg-transparent-1024x512.png',
     locale: 'en_US',
     siteName: 'Nizar Baihaqi',
     twitterUser: '@abaihaaqi'

@@ -28,8 +28,8 @@ module.exports = {
         light: '#B4A5A5'
       },
       dark: {
-        primary: '#D4ECDD',
-        secondary: '#345B63',
+        primary: '#FEF5ED',
+        secondary: '#D3E4CD',
       },
       light: {
         primary: '#152D35',

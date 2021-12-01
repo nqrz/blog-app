@@ -10,7 +10,7 @@
     </Hero>
     <Container>
       <div class="w-3/12">
-        <div class="sticky top-16 mb-9">
+        <div class="sticky top-14 mb-14">
           <Card>
             <nav>
               <ul>

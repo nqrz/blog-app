@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between w-full">
+  <div class="flex justify-between w-full mb-6">
     <div>
       <NuxtLink v-if="prev" :to="{ name: 'projects-slug', params: { slug: prev.slug } }">
         &larr; <span class="hover:underline">{{ prev.title }}</span>
@@ -26,6 +26,7 @@ export default {
       type: Object,
       default: () => null
     }
-  }
+  },
+  scrollToTop: true
 }
 </script>

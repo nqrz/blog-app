@@ -1,5 +1,6 @@
 html {
-  @apply bg-pastel-blue
+  @apply bg-pastel-blue;
+  scroll-behavior: smooth;
 }
 
 h1 {
