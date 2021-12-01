@@ -5,6 +5,9 @@ module.exports = {
   mode: 'jit',
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Noto Sans', 'Arial', 'sans-serif']
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

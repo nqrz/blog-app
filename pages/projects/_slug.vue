@@ -44,6 +44,16 @@
 
 <script>
 export default {
+  head({$seoMeta}){
+    return {
+      title: this.project.title,
+      meta: $seoMeta({
+        title: this.project.title,
+        description: this.project.description,
+        url: `https://nizarbaihaqi.com${this.project.path}`
+      }, false)
+    }
+  },
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }

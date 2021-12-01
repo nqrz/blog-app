@@ -36,6 +36,16 @@
 import { mapMutations } from 'vuex'
 
 export default {
+  head({$seoMeta}){
+    return {
+      title: 'Todo App',
+      meta: $seoMeta({
+        title: 'Todo App',
+        description: 'This is todo list app with Vuex. 📝',
+        url: 'https://nizarbaihaqi.com/todo'
+      }, false)
+    }
+  },
   data() {
     return {
       text: '',

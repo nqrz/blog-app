@@ -41,8 +41,19 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/color-mode',
+    '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss',
   ],
+
+  // Google fonts
+  googleFonts: {
+    families: {
+      'Noto+Sans': {
+        wght: [400, 700],
+        ital: [400, 700]
+      }
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
