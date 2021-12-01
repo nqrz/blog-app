@@ -1,8 +1,8 @@
 <template>
   <div>
     <Hero>
-      <img src="~assets/logo-dark.svg" alt="logo" class="w-40 spin" v-if="$colorMode.preference == 'light'" />
-      <img src="~assets/logo-aqua.svg" alt="logo" class="w-40 spin" v-else />
+      <img src="~assets/logo-light-256x256.png" alt="logo" class="w-40 spin" v-if="$colorMode.preference == 'light'" />
+      <img src="~assets/logo-dark-256x256.png" alt="logo" class="w-40 spin" v-else />
       <h1 class="font-bold my-4 px-10">Nizar Baihaqi</h1>
       <div>
         <h6>Counter: {{ counter }}</h6>

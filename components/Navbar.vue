@@ -3,8 +3,8 @@
     <div class="flex justify-center max-w-full">
       <div class="container max-w-screen-lg flex justify-between items-center">
         <NuxtLink to="/" class="flex ml-2 nav-link">
-          <img src="~assets/logo-dark.svg" alt="logo" class="w-6" v-if="$colorMode.preference == 'light'" />
-          <img src="~assets/logo-aqua.svg" alt="logo" class="w-6" v-else />
+          <img src="~assets/logo-light-24x24.png" alt="logo" class="w-6" v-if="$colorMode.preference == 'light'" />
+          <img src="~assets/logo-dark-24x24.png" alt="logo" class="w-6" v-else />
           <span class="ml-2 font-bold">
             Nizar Baihaqi
           </span>
