@@ -4,7 +4,7 @@
       <img src="~assets/logo-light-256x256.png" alt="logo" class="w-40 spin" v-if="$colorMode.preference == 'light'" />
       <img src="~assets/logo-dark-256x256.png" alt="logo" class="w-40 spin" v-else />
       <h1 class="font-bold my-4 px-10">Nizar Baihaqi</h1>
-      <div>
+      <div class="mb-2">
         <h6>Counter: {{ counter }}</h6>
         <button class="btn rounded-md" @click="addCount">Add count</button>
       </div>

@@ -1,17 +1,17 @@
 .nuxt-content h1 {
-  @apply text-3xl md:text-4xl lg:text-5xl mb-3
+  @apply text-3xl md:text-4xl lg:text-5xl mb-4 font-bold
 }
 
 .nuxt-content h2 {
-  @apply text-2xl md:text-3xl lg:text-4xl mb-4
+  @apply text-2xl md:text-3xl lg:text-4xl mb-3 font-bold
 }
 
 .nuxt-content h3 {
-  @apply text-xl md:text-2xl lg:text-3xl mb-4
+  @apply text-xl md:text-2xl lg:text-3xl mb-3 font-bold
 }
 
 .nuxt-content h4 {
-  @apply text-xl md:text-2xl mb-4
+  @apply text-xl md:text-2xl mb-3 font-bold
 }
 
 .nuxt-content li {
@@ -19,7 +19,7 @@
 }
 
 .nuxt-content p {
-  @apply text-lg mb-3
+  @apply text-lg mb-5
 }
 
 .nuxt-content a {

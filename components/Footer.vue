@@ -2,8 +2,8 @@
   <div class="block md:flex justify-center py-11 bg-pastel-blue dark:bg-black dark:text-dark-secondary">
     <div class="flex flex-col items-center md:items-end md:pr-2">
       <router-link to="/" class="flex">
-        <img src="~assets/logo-dark.svg" alt="logo" class="w-6" v-if="$colorMode.preference == 'light'" />
-        <img src="~assets/logo-aqua.svg" alt="logo" class="w-6" v-else />
+        <img src="~assets/logo-light-256x256.png" alt="logo" class="w-6" v-if="$colorMode.preference == 'light'" />
+        <img src="~assets/logo-dark-256x256.png" alt="logo" class="w-6" v-else />
         <span class="ml-2 font-bold hover:text-light-primary dark:hover:text-dark-primary transition-all">Nizar Baihaqi</span>
       </router-link>
       <code class="mt-3 text-xs">Created in my home with</code>

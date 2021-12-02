@@ -1,7 +1,7 @@
 ---
 title: 🐱‍💻 My Website
 description: All about this website.
-img: https://nizarbaihaqi.com//my-website.png
+img: my-website.png
 category: ['nuxtjs', 'tailwindcss']
 author: nqrz
 highlight: true
@@ -26,17 +26,6 @@ Saya menggunakan Nuxtjs karena memiliki dukungan SSR (Static Site Rendering) seh
 #### [Tailwindcss](https://tailwindcss.com) &#8599;
 
 Saya lebih memilih Tailwindcss daripada bootstrap karena tailwindcss memiliki flexibilitas yang tinggi. Seperti penggunaan warna pada *card* ini. Juga dukungan *light/dark mode*.
-
-```js{1.3-5}[server.js]
-const http = require('http')
-const bodyParser = require('body-parser')
-
-http.createServer((req, res) => {
-  bodyParser.parse(req, (error, body) => {
-    res.end(body)
-  })
-}).listen(3000)
-```
 
 ## Target
 

@@ -20,7 +20,7 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon/favicon.ico' }
     ]
   },
 
@@ -75,7 +75,7 @@ export default {
     title: 'Nizar Baihaqi',
     defaultDescription: 'Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️',
     defaultUrl: 'https://nizarbaihaqi.com/',
-    defaultImage: 'https://nizarbaihaqi.com/logo-dark-350x350-bg-transparent-1024x512.png',
+    defaultImage: 'https://nizarbaihaqi.com/banner/logo-dark-350x350-bg-transparent-1024x512.png',
     locale: 'en_US',
     siteName: 'Nizar Baihaqi',
     twitterUser: '@abaihaaqi'
