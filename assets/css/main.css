@@ -47,7 +47,7 @@ a {
 }
 
 .nav-link-xs {
-  @apply text-light-secondary hover:text-black dark:text-dark-primary dark:hover:text-white w-full hover:bg-pastel-gray dark:hover:bg-night-gray py-2 px-3 transition-all;
+  @apply text-left text-light-secondary hover:text-black dark:text-dark-primary dark:hover:text-white w-full hover:bg-pastel-gray dark:hover:bg-night-gray py-2 px-3 transition-all;
 }
 
 .img {

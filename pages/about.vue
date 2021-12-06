@@ -17,7 +17,7 @@ export default {
   <div>
     <Hero>
       <div>
-        <p class="text-9xl mb-8">🐱‍💻</p>
+        <p class="text-9xl mb-8">🧑‍🔧</p>
         <h1 class="font-bold mb-4">About me</h1>
       </div>
     </Hero>

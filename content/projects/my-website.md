@@ -1,5 +1,5 @@
 ---
-title: 🐱‍💻 My Website
+title: 🧑‍🔧 My Website
 description: All about this website.
 img: my-website.png
 category: ['nuxtjs', 'tailwindcss']
@@ -32,12 +32,12 @@ Saya lebih memilih Tailwindcss daripada bootstrap karena tailwindcss memiliki fl
 - [x] *light/dark mode*
 - [x] Dukungan *markdown*
 - [x] *Responsive Navbar*
-- [ ] SEO page
-- [ ] *Banner image* untuk setiap project.
+- [x] SEO page
+- [x] *Banner image* untuk setiap project.
+- [x] Fitur search berdasarkan teknologi yang digunakan
 - [ ] Fitur save todo list ke database (Supabase) + *authentication*
-- [ ] Fitur search berdasarkan teknologi yang digunakan
 - [ ] Ubah link logo ke project yang menggunakan teknologi tsb.
 
 ## Link
 
-[Repo](https://github.com/nqrz/nizarbaihaqi.com)&#8599;
+[Repo Github](https://github.com/nqrz/nizarbaihaqi.com)&#8599;

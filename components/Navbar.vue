@@ -16,7 +16,7 @@
           </button>
           <div class="hidden sm:flex">
             <NuxtLink class="nav-link" to="/projects">Projects</NuxtLink>
-            <NuxtLink class="nav-link" to="/todo">Todo</NuxtLink>
+            <!-- <NuxtLink class="nav-link" to="/todo">Todo</NuxtLink> -->
             <NuxtLink class="nav-link" to="/about">About me</NuxtLink>
           </div>
           <button @click="toggleSidebar" class="sm:hidden nav-link">
@@ -32,11 +32,11 @@
             Projects
           </button>
         </NuxtLink>
-        <NuxtLink to="/Todo">
+        <!-- <NuxtLink to="/Todo">
           <button @click="toggleSidebar" class="nav-link-xs">
             Todo
           </button>
-        </NuxtLink>
+        </NuxtLink> -->
         <NuxtLink to="/about">
           <button @click="toggleSidebar" class="nav-link-xs">
             About me
