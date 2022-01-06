@@ -27,7 +27,6 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/main.css',
-    '~/assets/css/content.css',
     '~/assets/css/transition.css',
   ],
 
@@ -57,18 +56,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    "nuxt-seo-meta",
-    "@nuxt/content"
+    'nuxt-seo-meta'
   ],
-
-  // Content
-  content: {
-    markdown: {
-      prism: {
-        theme: 'prism-themes/themes/prism-night-owl.css'
-      }
-    }
-  },
   
   // Seo Meta
   seoMeta: {

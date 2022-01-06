@@ -8,6 +8,9 @@ module.exports = {
     fontFamily: {
       sans: ['Noto Sans', 'Arial', 'sans-serif']
     },
+    container: {
+      center: true
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

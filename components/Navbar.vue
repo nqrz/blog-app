@@ -15,8 +15,8 @@
             <i class="fas fa-moon" v-else></i>
           </button>
           <div class="hidden sm:flex">
-            <NuxtLink class="nav-link" to="/projects">Projects</NuxtLink>
-            <!-- <NuxtLink class="nav-link" to="/todo">Todo</NuxtLink> -->
+            <a class="nav-link" href="https://article.nizarbaihaqi.com">Articles</a>
+            <NuxtLink class="nav-link" to="/todo">Todo</NuxtLink>
             <NuxtLink class="nav-link" to="/about">About me</NuxtLink>
           </div>
           <button @click="toggleSidebar" class="sm:hidden nav-link">
@@ -27,16 +27,21 @@
     </div>
     <transition name="slide-fade">
       <div v-show="sidebar" class="sm:hidden flex flex-col">
+        <a href="https://article.nizarbaihaqi.com">
+          <button @click="toggleSidebar" class="nav-link-xs">
+            Articles
+          </button>
+        </a>
         <NuxtLink to="/projects">
           <button @click="toggleSidebar" class="nav-link-xs">
             Projects
           </button>
         </NuxtLink>
-        <!-- <NuxtLink to="/Todo">
+        <NuxtLink to="/Todo">
           <button @click="toggleSidebar" class="nav-link-xs">
             Todo
           </button>
-        </NuxtLink> -->
+        </NuxtLink>
         <NuxtLink to="/about">
           <button @click="toggleSidebar" class="nav-link-xs">
             About me

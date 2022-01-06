@@ -15,18 +15,12 @@ export default {
 
 <template>
   <div>
-    <Hero>
-      <div>
-        <p class="text-9xl mb-8">🧑‍🔧</p>
-        <h1 class="font-bold mb-4">About me</h1>
-      </div>
-    </Hero>
-    <Container>
+    <div class="container">
       <Me />
-    </Container>
-    <Container>
-      <Card class="w-full lg:w-5/12 flex justify-center">
-        <h5 class="text-center mb-4">Tech stack</h5>
+    </div>
+    <div class="container block md:flex">
+      <div class="card md:w-5/12">
+        <h3 class="text-center">Tech stack</h3>
         <div class="flex justify-center px-1 flex-wrap">
           <a
             target="_blank"
@@ -53,9 +47,9 @@ export default {
             <p>Tailwindcss</p>
           </a>
         </div>
-      </Card>
-      <Card class="mt-6 lg:mt-3 w-full lg:w-7/12 lg:ml-6 flex justify-center">
-        <h5 class="text-center mb-4">Basic skill</h5>
+      </div>
+      <div class="card md:w-7/12">
+        <h3 class="text-center mb-4">Basic skill</h3>
         <div class="flex justify-center flex-wrap">
           <a
             target="_blank"
@@ -93,13 +87,37 @@ export default {
             />
             <p>Javascript</p>
           </a>
+          <a
+            target="_blank"
+            href="https://www.php.net/"
+            class="flex flex-col items-center logo-link"
+          >
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+              alt="Logo Javascript"
+            />
+            <p>PHP</p>
+          </a>
         </div>
-      </Card>
-    </Container>
-    <Container>
-      <Card class="w-full lg:w-1/2 flex justify-center">
-        <h5 class="mb-4 text-center">Side project</h5>
+      </div>
+    </div>
+    <div class="container block md:flex">
+      <div class="card md:w-1/2">
+        <h3 class="mb-4 text-center">Side project</h3>
         <div class="flex justify-center">
+          <a
+            target="_blank"
+            href="https://v3.vuejs.org"
+            class="flex flex-col items-center logo-link"
+          >
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+              alt="Logo Svelte"
+            />
+            <p>Vue 3</p>
+          </a>
           <a
             target="_blank"
             href="https://svelte.dev/"
@@ -112,9 +130,21 @@ export default {
             />
             <p>Svelte</p>
           </a>
+          <a
+            target="_blank"
+            href="https://laravel.com"
+            class="flex flex-col items-center logo-link"
+          >
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+              alt="Logo Svelte"
+            />
+            <p>Laravel</p>
+          </a>
         </div>
-      </Card>
-      <Contacts class="mt-6 lg:mt-3 w-full lg:w-1/2 lg:ml-6" />
-    </Container>
+      </div>
+      <Contacts class="md:w-1/2" />
+    </div>
   </div>
 </template>

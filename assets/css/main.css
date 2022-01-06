@@ -1,29 +1,40 @@
 html {
-  @apply bg-pastel-blue;
   scroll-behavior: smooth;
 }
 
+body {
+  @apply bg-pastel-blue dark:bg-black
+}
+
 h1 {
-  @apply text-5xl md:text-6xl lg:text-7xl mb-4;
+  @apply text-[2em] mb-4;
 }
 h2 {
-  @apply text-4xl md:text-5xl lg:text-6xl mb-4;
+  @apply text-[1.5em] mb-4;
 }
 h3 {
-  @apply text-3xl md:text-4xl lg:text-5xl mb-4;
+  @apply text-[1.3em] mb-4;
 }
 h4 {
-  @apply text-2xl md:text-3xl lg:text-4xl mb-3;
+  @apply text-[1em] mb-3;
 }
 h5 {
-  @apply text-xl lg:text-2xl mb-3;
+  @apply text-[0.8em] mb-3;
 }
 h6 {
-  @apply text-lg lg:text-xl mb-3;
+  @apply text-[0.7em] mb-3;
 }
 
 input {
-  @apply rounded-md py-1 px-2 dark:bg-night-gray my-2
+  @apply rounded-md py-2 px-3 dark:bg-night-gray
+}
+
+.banner {
+  @apply flex flex-col justify-center items-center h-screen bg-gradient-to-tr from-pastel-gray to-pastel-blue dark:from-night-black dark:to-night-purple text-center
+}
+
+.card {
+  @apply bg-pastel-cream dark:bg-night-purple rounded-lg shadow-xl m-3 py-4 px-6;
 }
 
 .btn {

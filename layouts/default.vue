@@ -13,6 +13,6 @@ export default {
   <div class="bg-pastel-gray dark:bg-night-black dark:text-dark-primary">
     <Navbar />
     <Nuxt />
-    <Footer />
+    <Footer class="mt-3" />
   </div>
 </template>
