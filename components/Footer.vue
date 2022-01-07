@@ -1,13 +1,11 @@
 <template>
-  <div class="block md:flex justify-center py-11 bg-pastel-blue dark:bg-black dark:text-dark-secondary">
-    <div class="flex flex-col items-center md:items-end md:pr-2">
+  <div class="block md:flex justify-center py-5 bg-pastel-blue dark:bg-black dark:text-dark-secondary">
+    <div class="flex flex-col justify-center items-center md:items-end md:pr-2">
       <router-link to="/" class="flex">
+        <span class="mr-2 font-bold hover:text-light-primary dark:hover:text-dark-primary transition-all">Nizar Baihaqi</span>
         <img src="~assets/logo-light-256x256.png" alt="logo" class="w-6" v-if="$colorMode.preference == 'light'" />
         <img src="~assets/logo-dark-256x256.png" alt="logo" class="w-6" v-else />
-        <span class="ml-2 font-bold hover:text-light-primary dark:hover:text-dark-primary transition-all">Nizar Baihaqi</span>
       </router-link>
-      <code class="mt-3 text-xs">Created in my home with</code>
-      <code class="text-xs">Nuxtjs and Tailwind</code>
     </div>
     <div
       class="flex flex-col items-center mt-3 md:mt-0 md:items-start md:pl-2 md:border-l-2 border-light-secondary dark:border-dark-secondary">
@@ -16,9 +14,6 @@
       </a>
       <a class="hover:text-light-primary dark:hover:text-dark-primary" target="_blank" href="https://www.linkedin.com/in/nizar-baihaqi/">
         <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a class="hover:text-light-primary dark:hover:text-dark-primary" href="https://dribbble.com/ijaybaihaqi">
-        <i class="fab fa-dribbble"></i> Dribbble
       </a>
     </div>
   </div>

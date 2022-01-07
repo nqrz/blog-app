@@ -10,15 +10,16 @@
           </span>
         </NuxtLink>
         <div class="flex">
+          <div class="hidden sm:flex">
+            <NuxtLink class="nav-link" to="/">Home</NuxtLink>
+            <NuxtLink class="nav-link" to="/todo">Todo</NuxtLink>
+            <NuxtLink class="nav-link" to="/about">About me</NuxtLink>
+          </div>
           <button class="nav-link" @click="toggleColor()">
             <i class="fas fa-sun transition-all" v-if="$colorMode.preference == 'light'"></i>
             <i class="fas fa-moon" v-else></i>
           </button>
-          <div class="hidden sm:flex">
-            <a class="nav-link" href="https://article.nizarbaihaqi.com">Articles</a>
-            <NuxtLink class="nav-link" to="/todo">Todo</NuxtLink>
-            <NuxtLink class="nav-link" to="/about">About me</NuxtLink>
-          </div>
+          <a class="btn m-1 rounded-full !px-3 hidden sm:flex" target="_blank" href="https://article.nizarbaihaqi.com">Articles</a>
           <button @click="toggleSidebar" class="sm:hidden nav-link">
             <i class="fas fa-bars"></i>
           </button>
@@ -27,16 +28,6 @@
     </div>
     <transition name="slide-fade">
       <div v-show="sidebar" class="sm:hidden flex flex-col">
-        <a href="https://article.nizarbaihaqi.com">
-          <button @click="toggleSidebar" class="nav-link-xs">
-            Articles
-          </button>
-        </a>
-        <NuxtLink to="/projects">
-          <button @click="toggleSidebar" class="nav-link-xs">
-            Projects
-          </button>
-        </NuxtLink>
         <NuxtLink to="/Todo">
           <button @click="toggleSidebar" class="nav-link-xs">
             Todo
@@ -47,6 +38,11 @@
             About me
           </button>
         </NuxtLink>
+        <a href="https://article.nizarbaihaqi.com">
+          <button @click="toggleSidebar" class="nav-link-xs">
+            Articles
+          </button>
+        </a>
       </div>
     </transition>
   </div>

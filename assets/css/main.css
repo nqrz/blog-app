@@ -62,13 +62,13 @@ a {
 }
 
 .img {
-  height: 200px;
-  width: 200px;
-  max-width: 200px;
+  height: 150px;
+  width: 150px;
+  max-width: 150px;
 }
 
 .logo-link {
-  @apply px-2 mt-4;
+  @apply px-2;
   transition: 0.2s ease-in-out all;
 }
 
@@ -77,8 +77,8 @@ a {
 }
 
 .logo {
-  height: 100px;
   width: 100px;
+  height: 100px;
   max-width: 100px;
 }
 

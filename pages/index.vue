@@ -42,8 +42,9 @@
 
     </div>
     <div class="container block md:flex">
-      <Me class="md:w-9/12" />
-      <Contacts class="md:ml-6 md:w-3/12 mt-6 lg:mt-3"/>
+      <Me class="md:w-6/12" />
+      <IconCard class="md:w-3/12" heading="Social Media" :icons="socials" :mini="true" />
+      <IconCard class="md:w-3/12" heading="Contacts" :icons="contacts" :mini="true" />
     </div>
   </div>
 </template>
@@ -53,7 +54,13 @@ export default {
   computed: {
     counter () {
       return this.$store.state.counter
-    }
+    },
+    socials () {
+      return this.$store.state.socials
+    },
+    contacts () {
+      return this.$store.state.contacts
+    },
   },
   methods: {
     addCount () {

@@ -62,7 +62,7 @@ export default {
   // Seo Meta
   seoMeta: {
     title: 'Nizar Baihaqi',
-    defaultDescription: 'Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. I have experience at building website with Jamstack. 🛠️',
+    defaultDescription: 'Hello, I’m Nizar Baihaqi from Indonesia. I am a Web Developer. Usually create with Nuxtjs and Tailwindcss. 🛠️',
     defaultUrl: 'https://nizarbaihaqi.com/',
     defaultImage: 'https://nizarbaihaqi.com/banner/logo-dark-350x350-bg-transparent-1024x512.png',
     locale: 'en_US',
