@@ -32,7 +32,7 @@
         :class="[dimmer && open ? 'w-full h-full' : 'w-0 h-0']"
       />
     </div>
-    <div class="fixed top-0 bg-night-purple transition-all h-full flex flex-col w-4/6 overflow-hidden" :class="[open ? 'right-0 opacity-100' : ' -right-full opacity-0']">
+    <div class="fixed top-0 bg-pastel-blue dark:bg-night-purple transition-all h-full flex flex-col w-4/6 overflow-hidden" :class="[open ? 'right-0 opacity-100' : ' -right-full opacity-0']">
       <div class="flex justify-center">
         <NuxtLink to="/">
           <span @click="toggleSidebar">
