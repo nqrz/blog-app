@@ -84,5 +84,5 @@ export default {
   },
 
   // Page Transition
-  pageTransition: 'page',
+  pageTransition: 'fade',
 }
