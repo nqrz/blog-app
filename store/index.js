@@ -20,7 +20,7 @@ export const state = () => ({
       name: 'Email me',
       link: 'mailto:nizarbaihaq@gmail.com',
       img: 'icon/gmail.svg',
-      alt: 'Github logo'
+      alt: 'Gmail logo'
     },
     {
       name: 'Linkedin',

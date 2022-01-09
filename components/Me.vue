@@ -12,8 +12,8 @@
         Nizar Baihaqi
       </h3>
       <p>
-        Hello, I’m Nizar Baihaqi from Indonesia. I am a Frontend Web Developer. I
-        have experience building website with Vue, React or PHP.
+        Hello, I’m Nizar Baihaqi, A Frontend Web Developer. I
+        have experience building website with Vuejs, Reactjs or PHP.
       </p>
     </div>
   </div>

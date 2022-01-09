@@ -2,7 +2,7 @@
   <div class="card">
     <h3 class="mb-0 text-center">{{ heading }}</h3>
     <div class="flex justify-center flex-wrap" >
-      <div v-for="icon in icons" :key="icon.name">
+      <div v-for="icon in icons" :key="icon.name" :title="icon.alt">
         <a
           target="_blank"
           :href="icon.link"
