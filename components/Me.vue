@@ -1,17 +1,17 @@
 <template>
-  <div class="card block md:flex">
-    <div class="flex justify-center items-center">
-      <img
+  <div itemscope itemtype="https://schema.org/author" class="card block md:flex scroll-mt-3 snap-start">
+    <figure class="flex justify-center items-center">
+      <img itemprop="image"
         src="~/assets/ijay.jpg"
         alt="Nizar Baihaqi"
         class="rounded-full img"
       />
-    </div>
+    </figure>
     <div class="md:ml-6 flex flex-col justify-center">
-      <h3 class="font-semibold mb-2 text-center md:text-left">
+      <h3 itemprop="name" class="font-semibold mb-2 text-center md:text-left">
         Nizar Baihaqi
       </h3>
-      <p>
+      <p itemprop="description">
         Hello, I’m Nizar Baihaqi, A Frontend Web Developer. I
         have experience building website with Vuejs, Reactjs or PHP.
       </p>

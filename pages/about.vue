@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <div class="container block md:flex mt-6">
       <Me class="md:w-7/12" />
       <IconCard class="md:w-5/12" heading="Tech Stack" :icons="techStacks" />
@@ -12,7 +12,7 @@
       <IconCard class="md:w-1/2" heading="Socials" :mini="true" :icons="socials" />
       <IconCard class="md:w-1/2" heading="Contacts" :mini="true" :icons="contacts" />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -24,7 +24,10 @@ export default {
         title: 'About Me',
         description: 'Hello there, check my profile here at my own website. 😎',
         url: 'https://nizarbaihaqi.com/about'
-      }, false)
+      }, false),
+      link: [
+        { rel: 'canonical', href: 'https://nizarbaihaqi.com/about' }
+      ]
     }
   },
   computed: {

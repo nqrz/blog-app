@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card scroll-mt-3 snap-start">
     <h3 class="mb-0 text-center">{{ heading }}</h3>
     <div class="flex justify-center flex-wrap" >
       <div v-for="icon in icons" :key="icon.name" :title="icon.alt">
@@ -8,12 +8,14 @@
           :href="icon.link"
           class="flex flex-col items-center logo-link"
         >
-          <img
-            :class="[mini ? 'logo-mini mt-5' : 'logo mt-4']"
-            :src="[icon.imgDark != null && $colorMode.preference == 'light' ? icon.imgDark : icon.img]"
-            :alt="icon.alt"
-          />
-          <p class="mt-1">{{ icon.name }}</p>
+          <figure>
+            <img
+              :class="[mini ? 'logo-mini mt-5' : 'logo mt-4']"
+              :src="[icon.imgDark != null && $colorMode.preference == 'light' ? icon.imgDark : icon.img]"
+              :alt="icon.alt"
+            />
+          </figure>
+          <figcaption class="mt-1">{{ icon.name }}</figcaption>
         </a>
       </div>
     </div>

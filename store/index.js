@@ -1,5 +1,5 @@
 export const state = () => ({
-  counter: 0,
+  sidebar: false,
   socials: [
     {
       name: 'nqrz',
@@ -92,7 +92,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  increment(state) {
-    state.counter++
+  toggleSidebar (state) {
+    state.sidebar = !state.sidebar
   }
 }

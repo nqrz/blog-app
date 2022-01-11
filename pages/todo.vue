@@ -1,8 +1,10 @@
 <template>
-  <div class="max-w-md mx-auto">
+  <main class="max-w-md mx-auto">
     <div class="card mx-2">
-      <h1 class="text-center">Todo list</h1>
-      <p class="text-center mb-3">{{ formatDate(Date.now()) }}</p>
+      <header>
+        <h1 class="text-center">Todo list</h1>
+        <p class="text-center mb-3">{{ formatDate(Date.now()) }}</p>
+      </header>
 
       <!-- Todo list -->
 
@@ -35,7 +37,7 @@
         This list is stored with Vuex. Erased if web is reloaded.
       </InfoBox>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -49,7 +51,10 @@ export default {
         title: 'Todo App',
         description: 'This is todo list app with Vuex. 📝',
         url: 'https://nizarbaihaqi.com/todo'
-      }, false)
+      }, false),
+      link: [
+        { rel: 'canonical', href: 'https://nizarbaihaqi.com/todo' }
+      ]
     }
   },
   data() {

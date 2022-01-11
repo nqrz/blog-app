@@ -41,7 +41,7 @@ export default {
   buildModules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8'
   ],
 
   // Google fonts
@@ -56,7 +56,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-seo-meta'
+    'nuxt-seo-meta',
+    ['nuxt-supabase', {
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_KEY
+    }],
+    '@nuxtjs/sitemap'
   ],
   
   // Seo Meta
@@ -70,8 +75,23 @@ export default {
     twitterUser: '@abaihaaqi'
   },
 
+  // Sitemap
+  sitemap: {
+    hostname: 'https://nizarbaihaqi.com',
+    gzip: true,
+    exclude: [
+      '/maintenance'
+    ],
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
 
   generate: {

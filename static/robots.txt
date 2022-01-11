@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /
+
+User-agent: *
+Disallow: /maintenance
+Allow: /
+
+Sitemap: http://nizarbaihaqi.com/sitemap.xml

@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-pastel-blue dark:bg-black
+  @apply bg-pastel-blue text-light-primary dark:bg-black dark:text-dark-primary
 }
 
 h1 {
