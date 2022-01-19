@@ -27,7 +27,6 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/main.css',
-    '~/assets/css/transition.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -57,11 +56,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'nuxt-seo-meta',
-    ['nuxt-supabase', {
-      supabaseUrl: process.env.SUPABASE_URL,
-      supabaseKey: process.env.SUPABASE_KEY
-    }],
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxt/content'
   ],
   
   // Seo Meta
@@ -82,6 +78,15 @@ export default {
     exclude: [
       '/maintenance'
     ],
+  },
+
+  // Content
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-night-owl.css'
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

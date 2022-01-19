@@ -12,14 +12,14 @@
         <div class="flex">
           <div class="hidden sm:flex">
             <NuxtLink class="nav-link" to="/" title="Homepage">Home</NuxtLink>
-            <NuxtLink class="nav-link" to="/maintenance" title="Project page">Projects</NuxtLink>
+            <NuxtLink class="nav-link" to="/articles" title="Article Page">Articles</NuxtLink>
+            <!-- <NuxtLink class="nav-link" to="/projects" title="Project page">Projects</NuxtLink> -->
             <NuxtLink class="nav-link" to="/about" title="About page">About me</NuxtLink>
           </div>
           <button class="nav-link" @click="toggleColor()">
             <i class="fas fa-sun transition-all" v-if="$colorMode.preference == 'light'"></i>
             <i class="fas fa-moon" v-else></i>
           </button>
-          <a class="btn m-1 rounded-full !px-3 hidden sm:flex mr-2" target="_blank" href="https://article.nizarbaihaqi.com">Articles</a>
           <button @click="toggleSidebar" class="sm:hidden nav-link">
             <i class="fas fa-bars"></i>
           </button>
@@ -48,11 +48,16 @@
           <i class="fas fa-home w-8 text-center"></i>Home
         </div>
       </NuxtLink>
-      <NuxtLink to="/maintenance" class="w-full side-link" title="Link to project page">
+      <NuxtLink to="/articles" class="w-full side-link" title="Link to article page">
+        <div @click="toggleSidebar" class="w-full py-2">
+          <i class="fas fa-home w-8 text-center"></i>Articles
+        </div>
+      </NuxtLink>
+      <!-- <NuxtLink to="/projects" class="w-full side-link" title="Link to project page">
         <div @click="toggleSidebar" class="w-full py-2">
           <i class="fas fa-stream w-8 text-center"></i>Projects
         </div>
-      </NuxtLink>
+      </NuxtLink> -->
       <NuxtLink to="/about" class="w-full side-link" title="Link to about page">
         <div @click="toggleSidebar" class="w-full py-2">
           <i class="fas fa-user w-8 text-center"></i>About me

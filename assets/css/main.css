@@ -2,100 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+
+@layer base {
+  
+  body {
+    @apply bg-pastel-blue text-light-primary dark:bg-black dark:text-dark-primary
+  }
+  
+  h1 {
+    @apply text-[2em] mb-4;
+  }
+  
+  h2 {
+    @apply text-[1.5em] mb-4;
+  }
+  
+  h3 {
+    @apply text-[1.3em] mb-4;
+  }
+  
+  h4 {
+    @apply text-[1em] mb-3;
+  }
+  
+  h5 {
+    @apply text-[0.8em] mb-3;
+  }
+  
+  h6 {
+    @apply text-[0.7em] mb-3;
+  }
+  
+  input {
+    @apply rounded-md py-2 px-3 dark:bg-night-gray
+  }
+  
+  a {
+    @apply transition-all
+  }
+
 }
 
-body {
-  @apply bg-pastel-blue text-light-primary dark:bg-black dark:text-dark-primary
+@layer components {
+  .banner {
+    @apply flex flex-col justify-center items-center h-screen bg-gradient-to-tr from-pastel-gray to-pastel-blue dark:from-night-black dark:to-night-purple text-center
+  }
+  
+  .card {
+    @apply bg-pastel-cream dark:bg-night-purple rounded-lg shadow-xl m-3 py-4 px-6;
+  }
+  
+  .btn {
+    @apply py-1 px-2 bg-pastel-pink hover:bg-pastel-gray dark:bg-night-gray dark:hover:bg-night-light transition-all
+  }
+  
+  .btn:active {
+    transform: scale(0.9);
+  }
+
+  .link {
+    @apply text-blue-900 dark:text-blue-300 hover:text-blue-500 dark:hover:text-blue-100
+  }
+  
+  .nav-link {
+    @apply text-light-secondary hover:text-black dark:text-dark-primary dark:hover:text-white py-2 px-3 transition-all
+  }
+  
+  .side-link {
+    @apply text-light-secondary hover:text-black dark:text-dark-primary dark:hover:text-white w-full hover:bg-pastel-gray dark:hover:bg-night-gray transition-all hover:cursor-pointer;
+  }
+  
+  .img {
+    height: 150px;
+    width: 150px;
+    max-width: 150px;
+  }
+  
+  .logo-link {
+    @apply px-2;
+    transition: 0.2s ease-in-out all;
+  }
+  
+  .logo-link:hover {
+    transform: scale(1.05);
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+  }
+  
+  .logo:active {
+    transform: scale(0.9);
+  }
+  
+  .logo-mini {
+    height: 50px;
+    width: 50px;
+    max-width: 50px;
+  }
+  
+  .done {
+    @apply line-through;
+  }
 }
 
-h1 {
-  @apply text-[2em] mb-4;
-}
-h2 {
-  @apply text-[1.5em] mb-4;
-}
-h3 {
-  @apply text-[1.3em] mb-4;
-}
-h4 {
-  @apply text-[1em] mb-3;
-}
-h5 {
-  @apply text-[0.8em] mb-3;
-}
-h6 {
-  @apply text-[0.7em] mb-3;
-}
+@layer utilities {
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
 
-input {
-  @apply rounded-md py-2 px-3 dark:bg-night-gray
-}
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
 
-.banner {
-  @apply flex flex-col justify-center items-center h-screen bg-gradient-to-tr from-pastel-gray to-pastel-blue dark:from-night-black dark:to-night-purple text-center
-}
-
-.card {
-  @apply bg-pastel-cream dark:bg-night-purple rounded-lg shadow-xl m-3 py-4 px-6;
-}
-
-.btn {
-  @apply py-1 px-2 bg-pastel-pink hover:bg-pastel-gray dark:bg-night-gray dark:hover:bg-night-light transition-all
-}
-
-.btn:active {
-  transform: scale(0.9);
-}
-
-a {
-  @apply transition-all
-}
-
-.link {
-  @apply text-blue-900 dark:text-blue-300 hover:text-blue-500 dark:hover:text-blue-100
-}
-
-.nav-link {
-  @apply text-light-secondary hover:text-black dark:text-dark-primary dark:hover:text-white py-2 px-3 transition-all
-}
-
-.side-link {
-  @apply text-light-secondary hover:text-black dark:text-dark-primary dark:hover:text-white w-full hover:bg-pastel-gray dark:hover:bg-night-gray transition-all hover:cursor-pointer;
-}
-
-.img {
-  height: 150px;
-  width: 150px;
-  max-width: 150px;
-}
-
-.logo-link {
-  @apply px-2;
-  transition: 0.2s ease-in-out all;
-}
-
-.logo-link:hover {
-  transform: scale(1.05);
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
-}
-
-.logo:active {
-  transform: scale(0.9);
-}
-
-.logo-mini {
-  height: 50px;
-  width: 50px;
-  max-width: 50px;
-}
-
-.done {
-  @apply line-through;
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter,
+  .slide-fade-leave-to{
+    transform: translateY(-10px);
+    opacity: 0;
+  }
 }
