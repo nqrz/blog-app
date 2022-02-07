@@ -1,5 +1,5 @@
 <template>
-  <div class="card scroll-mt-3 snap-start">
+  <div class="card">
     <h3 class="mb-0 text-center">{{ heading }}</h3>
     <div class="flex justify-center flex-wrap" >
       <div v-for="icon in icons" :key="icon.name" :title="icon.alt">

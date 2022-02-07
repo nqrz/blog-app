@@ -1,5 +1,5 @@
 <template>
-  <footer class="block md:flex justify-center py-5 bg-pastel-blue dark:bg-black dark:text-dark-secondary">
+  <footer class="block md:flex justify-center py-5 dark:text-dark-secondary">
     <div class="flex flex-col justify-center items-center md:items-end md:pr-2">
       <router-link to="/" class="flex">
         <span class="mr-2 font-bold hover:text-light-primary dark:hover:text-dark-primary transition-all hidden md:block">Nizar Baihaqi</span>

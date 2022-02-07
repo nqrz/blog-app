@@ -44,7 +44,7 @@ export default {
 </script>
 
 <template>
-  <div class="container snap-start">
+  <div class="container">
     <h1 class="text-center mt-20">Articles</h1>
     <div class="flex justify-center mb-10">
       <div class="px-2">
@@ -61,7 +61,7 @@ export default {
     </div>
     <h2 v-else class="text-center">Newest article</h2>
     <div class="lg:grid grid-cols-2">
-      <div class="card snap-start" v-for="article in articles" :key="article.slug" :link="true" :url="article.path">
+      <div class="card" v-for="article in articles" :key="article.slug" :link="true" :url="article.path">
         <h3 class="text-center">{{ article.title }}</h3>
         <p class="text-center text-sm mb-1">{{ formatDate(article.createdAt) }}</p>
         <div class="flex justify-center gap-2">

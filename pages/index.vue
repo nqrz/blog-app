@@ -1,16 +1,16 @@
 <template>
   <main>
     <article itemscope itemtype="https://schema.org/Article">
-      <header class="banner mb-3 snap-start">
+      <header class="banner mb-3">
         <figure>
-          <img width="160" height="160" src="~assets/logo-light-256x256.png" alt="logo" class="w-40" v-if="$colorMode.preference == 'light'" />
-          <img width="160" height="160" src="~assets/logo-dark-256x256.png" alt="logo" class="w-40" v-else />
+          <img width="160" height="160" src="~assets/logo-light.svg" alt="logo" class="w-40" v-if="$colorMode.preference == 'light'" />
+          <img width="160" height="160" src="~assets/logo-dark.svg" alt="logo" class="w-40" v-else />
         </figure>
-        <h1 itemprop="name" class="font-bold my-4 px-10">Nizar Baihaqi</h1>
-        <p class="italic mb-2">"Practice makes perfect"</p>
+        <h1 itemprop="name" class="font-bold my-4 px-10 text-center">Nizar Baihaqi</h1>
+        <p class="italic mb-2 text-center">"Practice makes perfect"</p>
         <Arrow />
       </header>
-      <h2 class="text-center snap-start md:snap-none">Projects</h2>
+      <h2 class="text-center">Projects</h2>
       <section itemprop="articleBody" class="container block md:flex">
 
         <!-- Article page -->
@@ -27,7 +27,7 @@
 
         <!-- Portofolio page -->
 
-        <section itemprop="articleSection" class="card md:w-1/2 snap-start md:snap-none">
+        <section itemprop="articleSection" class="card md:w-1/2">
           <figure>
             <img itemprop="image" width="80" height="80" class="h-20 mb-3 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Logo Vue">
           </figure>
@@ -38,10 +38,31 @@
         </section>
 
       </section>
-      <section class="container block md:flex">
-        <Me class="md:w-6/12" />
-        <IconCard class="md:w-3/12" heading="Social Media" :icons="socials" :mini="true" />
-        <IconCard class="md:w-3/12" heading="Contacts" :icons="contacts" :mini="true" />
+      <section class="container xl:grid grid-cols-2">
+        <div itemscope itemtype="https://schema.org/author" class="card xl:flex">
+          <figure class="flex justify-center items-center">
+            <img itemprop="image"
+              src="~/assets/ijay.jpg"
+              alt="Nizar Baihaqi"
+              class="rounded-full img"
+            />
+          </figure>
+          <div class="xl:ml-6 flex flex-col justify-center">
+            <h3 itemprop="name" class="font-semibold mb-2 text-center xl:text-left">
+              Nizar Baihaqi
+            </h3>
+            <p itemprop="description">
+              Hello, I’m Nizar Baihaqi, A Frontend Web Developer. My tech stack is Nuxtjs which is based on Vuejs and use Tailwindcss utilities for styling.
+            </p>
+            <NuxtLink class="link" to="/about">
+              Read my details &rarr;
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="sm:grid grid-cols-2">
+          <IconCard heading="Social Media" :icons="socials" mini />
+          <IconCard heading="Contacts" :icons="contacts" mini />
+        </div>
       </section>
     </article>
   </main>

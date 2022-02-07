@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-md mb-2 snap-none">
+  <div class="container max-w-screen-lg mb-2">
     <div class="mx-3">
       <img class="w-full rounded-b-md" :src="`/banner/${article.img}`" alt="Project Banner Image">
       <!-- <img class="w-full rounded-b-md" :src="`https://nizarbaihaqi.com/banner/${article.img}`" alt="Project Banner Image"> -->
@@ -10,7 +10,7 @@
           <h1 class="text-center">{{ article.title }}</h1>
           <p class="text-center">Updated : {{ formatDate(article.updatedAt) }}</p>
         </div>
-        <article class="prose">
+        <article class="prose lg:prose-lg dark:prose-invert">
           <nuxt-content :document="article" />
         </article>
       </div>

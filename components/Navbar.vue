@@ -50,22 +50,14 @@
       </NuxtLink>
       <NuxtLink to="/articles" class="w-full side-link" title="Link to article page">
         <div @click="toggleSidebar" class="w-full py-2">
-          <i class="fas fa-home w-8 text-center"></i>Articles
+          <i class="fas fa-newspaper w-8 text-center"></i>Articles
         </div>
       </NuxtLink>
-      <!-- <NuxtLink to="/projects" class="w-full side-link" title="Link to project page">
-        <div @click="toggleSidebar" class="w-full py-2">
-          <i class="fas fa-stream w-8 text-center"></i>Projects
-        </div>
-      </NuxtLink> -->
       <NuxtLink to="/about" class="w-full side-link" title="Link to about page">
         <div @click="toggleSidebar" class="w-full py-2">
           <i class="fas fa-user w-8 text-center"></i>About me
         </div>
       </NuxtLink>
-      <a href="https://article.nizarbaihaqi.com" class="side-link py-2" @click="toggleSidebar" title="Link to article page">
-        <i class="fas fa-newspaper w-8 text-center"></i>Articles &#8599;
-      </a>
       <p class="text-xs text-center mt-1">nqrz @ 2022</p>
     </nav>
   </div>

@@ -9,31 +9,13 @@ export default {
       ]
     }
   },
-  data() {
-    return {
-      scrollPos: null,
-    }
-  },
-  async mounted() {
-    window.addEventListener('scroll', this.getScrollY)
-  },
-  methods: {
-    getScrollY () {
-      this.scrollPos = window.scrollY
-    }
-  },
-  computed: {
-    sidebar () {
-      return this.$store.state.sidebar
-    },
-  }
 }
 </script>
 
 <template>
   <div>
     <Navbar />
-    <div class="bg-pastel-gray dark:bg-night-black fixed inset-0 top-10 overflow-y-scroll snap-y snap-proximity">
+    <div class="bg-pastel-gray dark:bg-night-black fixed inset-0 top-10 overflow-y-scroll">
       <Nuxt />
       <Footer class="mt-3" />
     </div>

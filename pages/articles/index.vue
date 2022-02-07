@@ -6,7 +6,7 @@ export default {
       meta: $seoMeta({
         title: 'Articles',
         description: 'This is where i post my projects 👌',
-        url: 'https://nizarbaihaqi.com/projects'
+        url: 'https://nizarbaihaqi.com/articles'
       }, false)
     }
   },
@@ -44,15 +44,17 @@ export default {
 </script>
 
 <template>
-  <div class="container snap-start">
-    <h1 class="text-center mt-20">Articles</h1>
+  <div class="container max-w-screen-lg">
+    <h1 class="text-center pt-20">Articles</h1>
     <p class="text-center mb-2">This page uses <a href="https://content.nuxtjs.org" class="link" target="_blank" rel="noopener noreferrer">@nuxt/content &#8599;</a></p>
-    <div class="flex justify-center mb-10">
-      <div class="px-2">
-        <input class="" v-model="searchQuery" autocomplete="off" placeholder="Full text search">
+    <div class="mb-10">
+      <div class="max-w-screen-sm mx-auto p-3">
+        <input class="w-full " v-model="searchQuery" autocomplete="off" placeholder="Full text search">
+      </div>
+      <div class="mx-auto w-max">
         <button class="btn rounded-md" @click="searchQuery = 'nuxtjs'">Nuxtjs</button>
         <button class="btn rounded-md" @click="searchQuery = 'tailwindcss'">Tailwindcss</button>
-        <button class="btn rounded-md mt-2" @click="searchQuery = 'vuex'">Vuex</button>
+        <button class="btn rounded-md" @click="searchQuery = 'vuex'">Vuex</button>
       </div>
     </div>
     <div v-if="articles[0] === undefined" class="max-w-screen-sm mx-auto">

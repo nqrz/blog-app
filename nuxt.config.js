@@ -107,7 +107,4 @@ export default {
   colorMode: {
     classSuffix: ''
   },
-
-  // Page Transition
-  pageTransition: 'fade',
 }
