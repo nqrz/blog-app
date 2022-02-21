@@ -12,8 +12,8 @@
         <div class="flex">
           <div class="hidden sm:flex">
             <NuxtLink class="nav-link" to="/" title="Homepage">Home</NuxtLink>
-            <NuxtLink class="nav-link" to="/articles" title="Article Page">Articles</NuxtLink>
-            <!-- <NuxtLink class="nav-link" to="/projects" title="Project page">Projects</NuxtLink> -->
+            <!-- <NuxtLink class="nav-link" to="/articles" title="Article Page">Articles</NuxtLink> -->
+            <NuxtLink class="nav-link" to="/projects" title="Project page">Projects</NuxtLink>
             <NuxtLink class="nav-link" to="/about" title="About page">About me</NuxtLink>
           </div>
           <button class="nav-link" @click="toggleColor()">
@@ -48,11 +48,16 @@
           <i class="fas fa-home w-8 text-center"></i>Home
         </div>
       </NuxtLink>
-      <NuxtLink to="/articles" class="w-full side-link" title="Link to article page">
+      <NuxtLink to="/projects" class="w-full side-link" title="Link to projects page">
+        <div @click="toggleSidebar" class="w-full py-2">
+          <i class="fas fa-newspaper w-8 text-center"></i>Projects
+        </div>
+      </NuxtLink>
+      <!-- <NuxtLink to="/articles" class="w-full side-link" title="Link to article page">
         <div @click="toggleSidebar" class="w-full py-2">
           <i class="fas fa-newspaper w-8 text-center"></i>Articles
         </div>
-      </NuxtLink>
+      </NuxtLink> -->
       <NuxtLink to="/about" class="w-full side-link" title="Link to about page">
         <div @click="toggleSidebar" class="w-full py-2">
           <i class="fas fa-user w-8 text-center"></i>About me

@@ -2,9 +2,9 @@
 export default {
   head({$seoMeta}){
     return {
-      title: 'Articles',
+      title: 'Projects',
       meta: $seoMeta({
-        title: 'Articles',
+        title: 'Projects',
         description: 'This is where i post my projects 👌',
         url: 'https://nizarbaihaqi.com/projects'
       }, false)
@@ -13,22 +13,22 @@ export default {
   data() {
     return {
       searchQuery: '',
-      articles: [],
+      projects: [],
       category: []
     }
   },
   async asyncData({ $content }) {
-    const articles = await $content('articles')
+    const projects = await $content('projects')
       .sortBy('createdAt', 'desc')
       .fetch()
 
     return {
-      articles
+      projects
     }
   },
   watch: {
     async searchQuery(searchQuery) {
-      this.articles = await this.$content('articles')
+      this.projects = await this.$content('projects')
         .search(searchQuery)
         .sortBy('createdAt', 'desc')
         .fetch()
@@ -44,33 +44,36 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <h1 class="text-center mt-20">Articles</h1>
-    <div class="flex justify-center mb-10">
-      <div class="px-2">
-        <input class="" v-model="searchQuery" autocomplete="off" placeholder="Full text search">
+  <div class="container max-w-screen-lg">
+    <h1 class="text-center pt-20">Projects</h1>
+    <p class="text-center mb-2">This page uses <a href="https://content.nuxtjs.org" class="link" target="_blank" rel="noopener noreferrer">@nuxt/content &#8599;</a></p>
+    <div class="mb-10">
+      <div class="max-w-screen-sm mx-auto p-3">
+        <input class="w-full " v-model="searchQuery" autocomplete="off" placeholder="Full text search">
+      </div>
+      <div class="mx-auto w-max">
         <button class="btn rounded-md" @click="searchQuery = 'nuxtjs'">Nuxtjs</button>
         <button class="btn rounded-md" @click="searchQuery = 'tailwindcss'">Tailwindcss</button>
         <button class="btn rounded-md" @click="searchQuery = 'vuex'">Vuex</button>
       </div>
     </div>
-    <div v-if="articles[0] === undefined">
-      <WarnBox class="sm:w-full">
-        There's no article match.
+    <div v-if="projects[0] === undefined" class="max-w-screen-sm mx-auto">
+      <WarnBox class="mx-2">
+        There's no project match.
       </WarnBox>
     </div>
-    <h2 v-else class="text-center">Newest article</h2>
+    <h2 v-else class="text-center">Newest project</h2>
     <div class="lg:grid grid-cols-2">
-      <div class="card" v-for="article in articles" :key="article.slug" :link="true" :url="article.path">
-        <h3 class="text-center">{{ article.title }}</h3>
-        <p class="text-center text-sm mb-1">{{ formatDate(article.createdAt) }}</p>
+      <div class="card" v-for="project in projects" :key="project.slug" link :url="project.path">
+        <h3 class="text-center">{{ project.title }}</h3>
+        <p class="text-center text-sm mb-1">{{ formatDate(project.createdAt) }}</p>
         <div class="flex justify-center gap-2">
-          <p class="text-xs text-center inline-block mb-3" v-for="category in article.category" :key="category">
+          <p class="text-xs text-center inline-block mb-3" v-for="category in project.category" :key="category">
             {{ category }}
           </p>
         </div>
-        <p>{{ article.description }}</p>
-        <NuxtLink class="link" :to="article.path">
+        <p>{{ project.description }}</p>
+        <NuxtLink class="link" :to="project.path">
           Read &rarr;
         </NuxtLink>
       </div>

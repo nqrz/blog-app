@@ -7,7 +7,7 @@ author: nqrz
 highlight: true
 ---
 
-# nizarbaihaqi.com
+## nizarbaihaqi.com
 
 Website untuk menunjukkan hasil kerja saya dan profil saya.
 

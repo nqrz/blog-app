@@ -1,35 +1,13 @@
-<template>
-  <div class="mb-2">
-    <Container>
-      <img class="w-full rounded-b-md" :src="`https://nizarbaihaqi.com/banner/${article.img}`" alt="Project Banner Image">
-    </Container>
-    <Container>
-      <Card>
-        <div class="mt-6 mb-10">
-          <h1 class="text-center">{{ article.title }}</h1>
-          <p class="text-center">Updated : {{ formatDate(article.updatedAt) }}</p>
-        </div>
-        <article>
-          <nuxt-content :document="article" />
-        </article>
-      </Card>
-    </Container>
-    <Container>
-      <PrevNext :prev="prev" :next="next" />
-    </Container>
-  </div>
-</template>
-
 <script>
 export default {
   head({$seoMeta}){
     return {
-      title: this.article.title,
+      title: this.project.title,
       meta: $seoMeta({
-        title: this.article.title,
-        description: this.article.description,
-        image: `https://nizarbaihaqi.com/banner/${this.article.img}`,
-        url: `https://nizarbaihaqi.com${this.article.path}`
+        title: this.project.title,
+        description: this.project.description,
+        image: `https://nizarbaihaqi.com/banner/${this.project.img}`,
+        url: `https://nizarbaihaqi.com${this.project.path}`
       }, false)
     }
   },
@@ -40,19 +18,36 @@ export default {
     }
   },
   async asyncData ({ $content, params }) {
-    const article = await $content('articles', params.slug ).fetch()
+    const project = await $content('projects', params.slug ).fetch()
 
-    const [prev, next] = await $content('articles')
+    const [prev, next] = await $content('projects')
       .only(['title', 'slug'])
       .sortBy('createdAt', 'desc')
       .surround(params.slug)
       .fetch()
 
     return {
-      article,
+      project,
       prev,
       next
     }
-  }
+  },
+  layout: 'project'
 }
 </script>
+
+<template>
+  <div class="container max-w-screen-lg mb-2">
+    <div class="h-10 mb-3" />
+    <div class="card">
+      <div class="mt-6 mb-10">
+        <h1 class="text-center">{{ project.title }}</h1>
+        <p class="text-center">Published : {{ formatDate(project.createdAt) }}</p>
+      </div>
+      <article class="prose lg:prose-lg dark:prose-invert max-w-none">
+        <nuxt-content :document="project" />
+      </article>
+    </div>
+    <PrevNext :prev="prev" :next="next" />
+  </div>
+</template>
