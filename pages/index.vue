@@ -65,21 +65,7 @@ export default {
         </div>
       </div>
       <h3 class="text-center dark:bg-night-purple py-3">My Projects</h3>
-      <div class="max-w-screen-lg mx-auto lg:grid grid-cols-2">
-        <div class="card" v-for="project in projects" :key="project.slug" link :url="project.path">
-          <h3 class="text-center">{{ project.title }}</h3>
-          <p class="text-center text-sm mb-1">{{ formatDate(project.createdAt) }}</p>
-          <div class="flex justify-center gap-2">
-            <p class="text-xs text-center inline-block mb-3" v-for="category in project.category" :key="category">
-              {{ category }}
-            </p>
-          </div>
-          <p>{{ project.description }}</p>
-          <NuxtLink class="link" :to="project.path">
-            Read &rarr;
-          </NuxtLink>
-        </div>
-      </div>
+      <ProjectCard :projects="projects" />
     </article>
   </main>
 </template>
@@ -89,6 +75,15 @@ export default {
   height: 250px;
   width: 100%;
   background-image: url(/img/homepage-todo-app.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: aqua;
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

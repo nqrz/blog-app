@@ -63,20 +63,6 @@ export default {
       </WarnBox>
     </div>
     <h2 v-else class="text-center">Newest project</h2>
-    <div class="lg:grid grid-cols-2">
-      <div class="card" v-for="project in projects" :key="project.slug" link :url="project.path">
-        <h3 class="text-center">{{ project.title }}</h3>
-        <p class="text-center text-sm mb-1">{{ formatDate(project.createdAt) }}</p>
-        <div class="flex justify-center gap-2">
-          <p class="text-xs text-center inline-block mb-3" v-for="category in project.category" :key="category">
-            {{ category }}
-          </p>
-        </div>
-        <p>{{ project.description }}</p>
-        <NuxtLink class="link" :to="project.path">
-          Read &rarr;
-        </NuxtLink>
-      </div>
-    </div>
+    <ProjectCard :projects="projects" />
   </div>
 </template>
