@@ -4,9 +4,9 @@ Hello there, welcome to my website repository 👋
 
 ### If you want to clone my website :
 
-1. Download the zip or Fork the repo
+1. Download the zip
 
-2. Run `yarn` in your favourite terminal
+2. Run `yarn` in your favourite terminal (If `yarn` isn't installed, you can install it first `npm install yarn`)
 
 3. Then run `yarn dev` (First build may take time)
 
