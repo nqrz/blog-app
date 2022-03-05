@@ -56,9 +56,10 @@ export default {
                 Todo App
               </h3>
               <div class="flex flex-col">
-                <p>Simple todo app for everyone</p>
-                <a href="https://todo-nuxt.herokuapp.com" class="link pt-2" target="_blank">App &#8599;</a>
-                <a href="https://github.com/nqrz/todo-nuxt" class="link" target="_blank">Repo &#8599;</a>
+                <p>Wave portal with with blockchain integration</p>
+                <NuxtLink to="/projects/wave-portal" class="link">Read more &#8599;</NuxtLink>
+                <a href="https://nqrz-wave-portal.herokuapp.com" class="link mt-2" target="_blank">App &#8599;</a>
+                <a href="https://github.com/nqrz/wave-portal" class="link" target="_blank">Repo &#8599;</a>
               </div>
             </div>
           </div>
@@ -74,7 +75,7 @@ export default {
 .bg-image {
   height: 250px;
   width: 100%;
-  background-image: url(/img/homepage-todo-app.png);
+  background-image: url(/img/homepage-wave-portal.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

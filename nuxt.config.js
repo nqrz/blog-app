@@ -20,7 +20,12 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icon/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/icon/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icon/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icon/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/icon/android-chrome-192x192.png' },
+      { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/icon/android-chrome-512x512.png' },
     ]
   },
 
